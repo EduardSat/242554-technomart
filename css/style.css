@@ -1,0 +1,206 @@
+body {
+    min-width: 960px;
+    font-size: 13px;
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-weight: normal;
+}
+
+.container-center {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.main-header-bar {
+    background-color: #293449;
+}
+
+.logo-title {
+    float: left;
+    width: 220px;
+    padding: 11px 0 7px 0;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    background-color: #ee3643;
+    border-radius: 0;
+    text-decoration: none;
+}
+
+.search, .search-submit {
+    position: relative;
+    float: left;
+    width: 270px;
+}
+
+.search-submit {
+    float: right;
+    width: 220px;
+    height: 40px;
+    padding-left: 49px;
+    border: none;
+    font-size: 17px;
+    line-height: 24px;
+    color: #ffffff;
+    /*если задаю back-ground: color, то красится весь header*/
+    outline: none;
+}
+
+.bookmarks-header, .bookmarks-btn {
+    width: 128px;
+    padding-left: 20px;
+}
+
+.bar-btn {
+    position: relative;
+    float: left;
+    width: 148px;
+    padding: 12px 2px 12px 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    font-size: 17px;
+    line-height: 18px;
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #293449;
+    border-radius: 0;
+}
+
+.header-bar-btn:last-child {
+    margin-right: 0;
+}
+
+.bookmarks-header, .clearbox-header {
+    width: 128px;
+    padding-left: 20px;
+}
+
+.bar-bookmark-count:hover, .clearbox-header-btn:hover {
+    background-color: #212a3a;
+}
+
+.bar-bookmark-count:active, .clearbox-header-btn:active {
+    background-color: #161d29;
+    color: #a2a4a6;
+}
+
+.order-header-btn {
+    background-color: #63a63e;
+}
+
+.bar-btn:last-child {
+    margin-right: 0;
+}
+
+.main-header-info {
+    padding: 46px 0 60px 0;
+    background-color: #f1f5f7;
+}
+
+.header-content {
+    margin-bottom: 39px;
+}
+
+.header-text {
+    float: left;
+    width: 218px;
+    margin: 3px 51px 0 51px;
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+    font-weight: normal;
+    color: #ee3643;
+}
+
+.header-contacts-phone {
+    float: left;
+    width: 270px;
+}
+
+.contacts-phone {
+    padding: 8px;
+    border: 3px solid #ffffff;
+    font-size: 21px;
+    color: #ee3643;
+}
+
+.contacts-adress {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: #32425c;
+}
+
+.user-block {
+    float: right;
+    width: 300px;
+}
+
+.user-login {
+    margin: 0 10px 0 19px;
+    padding-left: 10px;
+    padding-right: 26px;
+}
+
+.user-sign-up {
+    width: 102px;
+}
+
+.user-block-btn {
+    float: left;
+    width: 85px;
+    padding: 11px 24px 12px 24px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+main-nav {
+    padding: 0;
+}
+
+.main-nav-list {
+    padding: inherit;
+    font-size: 0;
+}
+
+.main-nav-item {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main-nav-link {
+    display: block;
+    padding: 20px 30px 18px 30px;
+    border-bottom: 5px solid #293449;
+    text-align: center;
+    font-size: 17px;
+    line-height: 17px;
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #32425c;
+    border-radius: 0;
+}
+
+.main-nav-item:first-child .main-nav-link {
+    padding-left: 52px;
+    padding-right: 32px;
+}
+
+.main-nav-item:last-child .main-nav-link {
+    padding-left: 31px;
+    padding-right: 55px;
+}
