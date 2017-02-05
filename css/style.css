@@ -456,6 +456,136 @@
     float: left;
     width: 540px;
 }
+.service {
+  background: #F1F5F7;
+  margin-bottom: 70px;
+}
+.service h2 {
+  color: #000000;
+  font-family: 'Cuprum';
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 0.8;
+  padding-top: 60px;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+.service-info {
+  font-weight: 300;
+  line-height: 1.846;
+  margin: 0;
+}
+
+.service-slider {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.service-slider-leftcolumn {
+  float: left;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.service-slider-leftcolumn {
+  width: 200px;
+  padding: 20px;
+  background: #32425C;
+  color: #ffffff;
+  font-family: 'Cuprum';
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  border-bottom: 0.1px solid black;
+  display: block;
+}
+
+.service-slider-leftcolumn--active {
+  background: #FFFFFF;
+  color: #32425C;
+}
+.service-slider-right_column {
+  float: right;
+  width: 620px;
+}
+
+.service-slide{
+  display: none;
+  padding: 0 300px 100px 0;
+}
+
+.service-slide:nth-child(1) {
+  display: block;
+}
+
+.service-slider-right_column:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 10px;
+  height: 222px;
+}
+
+.service-slide h2 {
+  color: #32425c;
+  font-family: 'Cuprum';
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 0.667;
+  text-transform: uppercase;
+  margin: 0 0 30px;
+}
+
+.service-slide p {
+  font-weight: 300;
+  line-height: 1.846;
+  margin: 0;
+}
+
+.slide-delivery {
+  /*background: url картинки вставить*/
+}
+
+.slide-guarantee {
+/*background: url картинки вставить*/
+}
+
+.slide-credit {
+  /*background: url картинки вставить*/
+}
+
+.slide-delivery img {
+  position: absolute;
+  width: 468px;
+  height: 261px;
+  top: 0;
+  left: 140px;
+}
+
+.slide-guarantee img {
+  position: absolute;
+  width: 388px;
+  height: 283px;
+  top: 0;
+  left: 210px;
+}
+
+.slide-credit img {
+  position: absolute;
+  width: 465px;
+  height: 285px;
+  left: 180px;
+}
+
+.btn--slide-credit {
+  width: 194px;
+  margin-top: 30px;
+  position: relative;
+}
 .about-title {
     margin-bottom: 22px;
 }
