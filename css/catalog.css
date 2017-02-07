@@ -1,0 +1,259 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    font-size:16px;
+    font-family:"Open Sans", sans-serif;
+    color:black;
+    background:white;
+}
+.main-header .main-header-info{
+	width: 1200px;
+	height: 320px;: 
+}
+/*upper header navigation */
+.main-header-bar {
+	width: 1200px;
+	height: 42px;
+}
+.logo-title .logo-btn {
+	float: left;
+	width: 41px;
+	height: 12px;
+	font-family: Cuprum;
+	color: #ffffff;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 18px;
+}
+.bookmarks-header-btn .bar-btn {
+	float: left;
+	width: 78px;
+	height: 15px;
+	font-family: Cuprum;
+	color: #ffffff;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 18px;
+}
+.clearbox-header-btn .bar-btn {
+	float: left;
+	width: 150px;
+	height: 42px;
+}
+.order-header-btn .bar-btn {
+	float: left;
+	width: 150px;
+	height: 42px;
+}
+/*main header info*/
+.header-text {
+	float: left
+	width: 196px;
+	height: 60px;
+	font-family: Cuprum;
+	color: #ee3643;
+	font-size: 16px;
+	font-style: italic;
+	line-height: 23px;
+}
+.main-header-contacts {
+	
+}
+.contacts-phone {
+	width: 144px;
+	height: 21px;
+	font-family: Cuprum;
+	color: #e9292a;
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 17px;
+}
+.contacts-adress {
+	width: 250px;
+	height: 13px;
+	font-family: Cuprum;
+	color: #32425c;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+}
+/*добавить равшан джамшутович,мои заказы, личный кабинет*/
+/*lower header navigation*/
+.main-nav {
+	width: 940px;
+	height: 60px;
+}
+.main-nav-list {
+	float: left;
+}
+.main-nav-item {
+	font-family: Cuprum;
+	color: #ffffff;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 17px;
+}
+.main-nav-link {
+	
+}
+/*end of header*/
+/*begining of main page*/
+.main-page {
+	
+}
+.main-page-nav .nav-list {
+	
+}
+.nav-list .home-icon {
+	width: 15px;
+	height: 12px;
+}
+.nav-list .nav-catalog {
+	width: 53px;
+	height: 9px;
+	font-family: PTSans;
+	color: #000000;
+	font-size: 3.71px;
+	font-weight: 400;
+	line-height: 5.135px;
+	transform: scale(3.505,3.505);
+}
+.nav-list .nav-instrument {
+	width: 79px;
+	height: 9px;
+	font-family: PTSans;
+	color: #000000;
+	font-size: 3.71px;
+	font-weight: 400;
+	line-height: 5.135px;
+	transform: scale(3.505,3.505);
+}
+.nav-list .nav-drill {
+	width: 89px;
+	height: 9px;
+	font-family: PTSans;
+	color: #000000;
+	font-size: 3.71px;
+	font-weight: 400;
+	line-height: 5.135px;
+	transform: scale(3.505,3.505);
+}
+/*drill items section*/
+.catalog-items {
+	width:700px;
+    margin:20px auto;
+}
+.catalog-items .row {
+	margin-left:-20px;
+}
+.catalog-item{
+    position:relative;
+    display:inline-block;
+    width:218px;
+    margin-left:20px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    line-height:20px;
+    font-weight:bold;
+    text-align:center;
+}
+.catalog-items{
+    font-size:0;
+}
+.catalog-item{
+    font-size:16px;
+}
+.catalog-item .flag{
+    position:absolute;
+    top:-1px;
+    right:-1px;
+    width:60px;
+    height:60px;
+    text-indent:-1000px;
+    overflow:hidden;
+     z-index:20;
+}
+.catalog-item .flag-new{
+    background:url("img_catalog/Shape_2.png") no-repeat 0 0;
+}
+.catalog-item .drill-actions{
+    position:absolute;
+    top:0;
+    left:0;
+    width:218px;
+    height:88px;
+    padding:40px 0;
+    background-color:rgba(255,255,255,0.9);
+    z-index:10;
+}
+.catalog-item .drill-actions .buy,
+.catalog-item .drill-actions .bookmark{
+    display:block;
+    width:129px;
+    margin:0 auto;
+    margin-bottom:7px;
+    padding:7px 0;
+    border:3px solid #63a63e;
+    border-bottom-color:#367315; 
+    background-color:#63a63e;
+    color:white;
+    font-size:14px;
+    font-weight:normal;
+    font-family:"Cuprum", sans-serif;
+    line-height:18px;
+    text-decoration:none;
+    text-transform:uppercase;    
+    border-radius:3px;
+}
+.catalog-item .drill-actions .bookmark{
+    color:#32425c;
+    background:white;
+    border-bottom-color:#63a63e;
+}
+.catalog-item .drill-actions{
+    display:none;
+}
+.catalog-item:hover .drill-actions{
+    display:block;
+}
+.catalog-item .image{
+    width:218px;
+    height:168px;
+}
+.catalog-item .image img{
+    max-width:100%;
+}
+.catalog-item .title{
+    min-height:40px;
+    padding:0 25px;
+    margin-top:10px;
+    margin-bottom:15px;    
+}
+.catalog-item .discount{
+    min-height:20px;
+    margin-top:15px;
+    margin-bottom:10px;
+    color:#999;
+    text-decoration:line-through;
+}
+.catalog-item .price{
+    position:relative;
+    width:80px;
+    margin:10px auto;
+    margin-bottom:20px;
+    padding:10px 30px;
+    color:white;
+    background:#ee3643;
+    border-radius:3px;
+}
+.catalog-item .price:after{
+    content:"";
+    position:absolute;
+    top:0;
+    right:-20px;
+    width:0;
+    height:0;
+    border:20px solid white;
+    border-left-color:#ee3643;
+}
+/*drill items section ends*/
