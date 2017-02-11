@@ -73,7 +73,6 @@
   </header>
   <!--главный блок-->
   <main class="main-page">
-    <div class="container clearfix">
       <ul class="main-page-nav nav-list">
         <li>
           <a class="home" href="#">Дом</a>
@@ -88,15 +87,15 @@
           <a href="#">перфораторы</a>
         </li>
       </ul>
-    </div>
     <div class="page-title">
       <h2>ПЕРФОРАТОРЫ</h2>
     </div>
-    <form class="filter-column">
-      <div class="filter-price">
+    <aside class="side-bar">
+    <form class="filter-form">
         <div class="filter-title">
           <span>ФИЛЬТР:</span>
         </div>
+        <div class="filter-price">
         <div class="range-filter clearfix">
           <h2 class="range-title">Цена</h2>
           <div class="range-controls">
@@ -148,21 +147,23 @@
       </div>
       <button type="submit">ПОКАЗАТЬ</button>
     </form>
-    <section class="catalog-items">
-      <div class="drill-sorting">
-        <p>СОРТИРОВКА:</p>
-        <ul class="drill-sorting-list">
-          <li>
-        <a class="sorting-price">ПО ЦЕНЕ</a>
-      </li>
-      <li>
-        <a class="sorting-price">ПО ТИПУ</a>
-      </li>
+  </aside>
+   <div class="main-content">
+    <div class="drill-sorting">
+      <p>СОРТИРОВКА:</p>
+      <ul class="drill-sorting-list">
         <li>
-        <a class="sorting-price">ПО ФУНКЦИОНАЛУ</a>
-      </li>
-      </ul>
-      </div>
+      <a class="sorting-price">ПО ЦЕНЕ</a>
+    </li>
+    <li>
+      <a class="sorting-price">ПО ТИПУ</a>
+    </li>
+      <li>
+      <a class="sorting-price">ПО ФУНКЦИОНАЛУ</a>
+    </li>
+    </ul>
+    </div>
+    <secion class="catalog-items">
         <div class="catalog-item">
           <div class="drill-actions">
             <a href="#" class="buy">купить</a>
@@ -276,7 +277,6 @@
           <a class="next" href="#next">СЛЕДУЮЩАЯ</a>
         </div>
       </div>
-    </div>
     <section class="few_words-about">
       <div class="container clearfix">
         <h2 class="about-title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
@@ -288,7 +288,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container-center clearfix">
+    <div class="container clearfix">
         <div class="footer-left-column">
           <div class="footer-title">
             <p>ТЕХНОМАРТ</p>

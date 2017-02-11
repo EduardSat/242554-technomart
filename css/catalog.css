@@ -14,7 +14,6 @@ body {
   margin: 0 auto;
   padding: 0 10px;
 }
-
 .clearfix::after {
   display: table;
   clear: both;
@@ -152,22 +151,24 @@ body {
 /*drill items section*/
 .main-page {
   margin: auto;
-  width: 1200px;
+  width: 960px;
 }
 .drill-sorting {
   width: 700px;
+
 }
 .sorting-price {
   clear: both;
 }
-
-.filter-column {
+.side-bar {
+  float: left;
+  width: 220px;
+}
+.filter-form {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-content: flex-end;
-  width: 220px;
-  height: 746px;
+  align-content: flex-start;
   margin-right: 0px;
   overflow: hidden;
   clear: both;
