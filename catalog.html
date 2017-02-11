@@ -10,21 +10,20 @@
 <body>
   <!--header страницы-->
   <header class="main-header">
-    <div class="main-header-bar">
-      <div class="container clearfix">
-        <a class="logo-title logo-btn" href="#">Техномарт</a>
-        <form action="#" method="get" class="search">
-          <input type="search" class="search-field" placeholder="Поиск:">
-          <span class="search-icon">
-          </span>
-        </form>
-        <a class="bar-btn bookmarks" href="#">Закладки: <span>0</span></a>
-        <a class="bar-btn clearbox" href="#">Корзина: <span class="count">0</span></a>
-        <a class="bar-btn order" href="#">Оформить заказ</a>
+    <div class="header-upper clearfix">
+        <div class="logo-title">
+        <a href="#">Техномарт</a>
       </div>
+      <form>
+          <input type="search" class="search-field" placeholder="Поиск:">
+          <span class="search-icon"></span>
+        </form>
+        <a class="bookmarks bar-btn" href="#">Закладки: <span>0</span></a>
+        <a class="clearbox bar-btn" href="#">Корзина: <span class="count">0</span></a>
+        <a class="order bar-btn" href="#">Оформить заказ</a>
     </div>
     <div class="main-header-info">
-      <div class="container clearfix">
+        <div class="header-info clearfix">
         <div class="header-text"> интернет-магазин строительных материалов и инструментов для ремонта </div>
         <div class="main-header-contacts">
           <div class="contacts-phone"> +7 (812) 555-05-55 </div>
@@ -43,36 +42,38 @@
         </div>
       </div>
     </div>
+    <div class="header-lower">
     <nav class="main-nav">
       <ul class="main-nav-list">
         <li>
           <a href="#">Главная</a>
         </li>
         <li>
-          <a class="main-nav-link" href="#">Компания</a>
+          <a href="#">Компания</a>
         </li>
         <li>
-          <a class="main-nav-link" href="#">Каталог</a>
+          <a href="#">Каталог</a>
         </li>
         <li>
-          <a class="main-nav-link" href="#">Новости</a>
+          <a href="#">Новости</a>
         </li>
         <li>
-          <a class="main-nav-link" href="#">Спецпредложения</a>
+          <a href="#">Спецпредложения</a>
         </li>
         <li>
-          <a class="main-nav-link" href="#">Доставка</a>
+          <a href="#">Доставка</a>
         </li>
         <li>
-          <a class="main-nav-link" href="#">Контакты</a>
+          <a href="#">Контакты</a>
         </li>
       </ul>
     </nav>
+  </div>
     <!--  header заканчивается-->
   </header>
   <!--главный блок-->
   <main class="main-page">
-    <div class="wrapper clearfix">
+    <div class="container clearfix">
       <ul class="main-page-nav nav-list">
         <li>
           <a class="home" href="#">Дом</a>
@@ -90,12 +91,6 @@
     </div>
     <div class="page-title">
       <h2>ПЕРФОРАТОРЫ</h2>
-    </div>
-    <div class="drill-sorting">
-      <p>СОРТИРОВКА:</p>
-      <a class="sorting-price">ПО ЦЕНЕ</a>
-      <a class="sorting-price">ПО ТИПУ</a>
-      <a class="sorting-price">ПО ФУНКЦИОНАЛУ</a>
     </div>
     <form class="filter-column">
       <div class="filter-price">
@@ -153,8 +148,21 @@
       </div>
       <button type="submit">ПОКАЗАТЬ</button>
     </form>
-    <div class="catalog-items">
-      <div class="row">
+    <section class="catalog-items">
+      <div class="drill-sorting">
+        <p>СОРТИРОВКА:</p>
+        <ul class="drill-sorting-list">
+          <li>
+        <a class="sorting-price">ПО ЦЕНЕ</a>
+      </li>
+      <li>
+        <a class="sorting-price">ПО ТИПУ</a>
+      </li>
+        <li>
+        <a class="sorting-price">ПО ФУНКЦИОНАЛУ</a>
+      </li>
+      </ul>
+      </div>
         <div class="catalog-item">
           <div class="drill-actions">
             <a href="#" class="buy">купить</a>
@@ -281,7 +289,6 @@
   </main>
   <footer class="footer">
     <div class="container-center clearfix">
-    <div class="footer-content">
         <div class="footer-left-column">
           <div class="footer-title">
             <p>ТЕХНОМАРТ</p>
@@ -292,46 +299,47 @@
             </p>
           </div>
         </div>
-        <section class="footer-navigation right-column">
+        <section class="footer-right-column">
+          <div class="container clearfix">
           <nav class="footer-nav">
             <ul class="footer-nav-list">
-              <li class="footer-nav-item">
+              <li>
                 <a class="footer-nav-link" href="#">Компания</a>
               </li>
-              <li class="footer-nav-item">
+              <li>
                 <a class="footer-nav-link" href="#">Новости</a>
               </li>
-              <li class="footer-nav-item">
+              <li>
                 <a class="footer-nav-link" href="#">Каталог</a>
               </li>
-              <li class="footer-nav-item">
+              <li>
                 <a class="footer-nav-link" href="#">Доставка</a>
               </li>
-              <li class="footer-nav-item">
+              <li>
                 <a class="footer-nav-link" href="#">Контакты</a>
               </li>
             </ul>
           </nav>
-          <nav class="footer-nav-list">
+          <nav class="footer-nav">
             <ul class="footer-nav-list">
-              <li class="footer-nav-item">
+              <li>
                 <a class="footer-nav-link" href="#">Материалы</a>
               </li>
-              <li class="footer-nav-item">
+              <li>
                 <a class="footer-nav-link" href="#">Техника</a>
               </li>
-              <li class="footer-nav-item">
+              <li>
                 <a class="footer-nav-link" href="#">Инструменты</a>
               </li>
-              <li class="footer-nav-item">
+              <li>
                 <a class="footer-nav-link" href="#">Спецпредложения</a>
               </li>
             </ul>
           </nav>
+        </div>
         </section>
-        <div class="footer-bar">
-          <div class="container-center clearfix">
-            <div class="footer-bar copyrigth">
+        <section class="footer-bar">
+            <div class="copyrigth">
               <p>&copy; 2010-2017 Компания «Техномарт»<br> Все права защищены</p>
             </div>
             <div class="footer-social">
@@ -339,20 +347,15 @@
               <a class="social" href="#">Фейсбук</a>
               <a class="social" href="#">Инстаграм</a>
             </div>
-            <div class="footer-bar clearfix">
               <div class="feedback">
                 Обратная связь:
                 <a href="#">mail@htmlacademy.ru</a>
               </div>
-              <section class="footer-developer">
+              <div class="footer-developer">
                 <p>Разработано-</p>
                 <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-              </section>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+              </div>
+    </section>
   </footer>
 
 </body>
