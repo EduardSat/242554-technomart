@@ -19,20 +19,22 @@ body {
   clear: both;
   content: '';
 }
-
 .main-header {
-  width: 960px;
   min-height: 317px;
-  margin: 0px auto;
+  background-color: #F1F5F7;
 }
 .header-upper {
+  background-color: #293449;
+}
+.header-upper-container {
+  width: 960px;
+  margin: 0 auto;
   color: #FFFFFF;
   padding: 6px 10px;
   display: flex;
   min-height: 42px;
   justify-content: space-between;
   margin-bottom: 0px;
-  background: #293449;
 }
 .logo-title {
   float: left;
@@ -47,6 +49,10 @@ body {
   width: 220px;
   margin-right: 10px;
 }
+.bar-btn {
+  text-decoration: none;
+  color: #FFFFFF;
+}
 .search-field-header input {
   margin-right: 80px;
   height: 32px;
@@ -55,13 +61,8 @@ body {
   padding: 5px 0 5px 40px;
   background: #293449;
   opacity: 0.5;
-  color: #293449;
 }
 .search-field-header label {
-  margin-left: 40px;
-  position: absolute;
-  top: 11px;
-  left: 0;
 }
 .bookmarks {
   margin-right: 20px;
@@ -76,7 +77,7 @@ body {
   /*background: url*/
   opacity: 0.3;
 }
-.clearboxb .bar-btn {
+.clearbox .bar-btn {
   color: #FFFFFF;
   text-decoration: none;
   padding: 12px 30px 12px 43px;
@@ -84,11 +85,9 @@ body {
 }
 /*main header info*/
 
-.main-header-info {
-  background: #F1F5F7;
-   padding: 0 10px 60px;
-}
 .header-info {
+  width: 960px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -165,7 +164,9 @@ border: 3px solid #FFFFFF;
   margin: 0 0 0 22px;
 }
 .header-lower {
-  background: #32425c;
+  width: 960px;
+  background-color: #32425c;
+  margin: 0 auto;
  border-bottom: 5px solid #293449;
 }
 .header-lower {
@@ -173,23 +174,22 @@ border: 3px solid #FFFFFF;
   font-size: 0;
 }
 .main-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 960px;
   padding: 0px 10px;
-  margin: 0 auto;
 }
-.main-nav-list li {
-  display: inline-block;
+.main-nav-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 10px;
 }
 .main-nav-list a {
   display: block;
   text-decoration: none;
   color: #FFFFFF;
   font-size: 17px;
-  padding: 19px 33px;
+  padding-top: 19px;
+  padding-bottom: 19px;
 }
+
 /*end of header*/
 
 
@@ -510,7 +510,7 @@ border: 3px solid #FFFFFF;
 .catalog-item:hover .drill-actions {
   display: block;
 }
-.breadcrumps {
+.breadcrumbs {
   width: 960px;
   margin: 0 auto;
 }
