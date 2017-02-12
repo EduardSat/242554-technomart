@@ -269,8 +269,7 @@ border: 3px solid #FFFFFF;
   width: 960px;
 }
 .drill-sorting {
-  width: 100px;
-
+  display: inline-block;
 }
 .sorting-price {
   clear: both;
@@ -323,6 +322,7 @@ border: 3px solid #FFFFFF;
 }
 
 .range-controls {
+  box-sizing: border-box;
   position: relative;
   overflow: hidden;
   width: 220px;
@@ -504,12 +504,17 @@ border: 3px solid #FFFFFF;
 .catalog-item:hover .drill-actions {
   display: block;
 }
+.breadcrumps {
+  width: 960px;
+  margin: 0 auto;
+}
 .main-content {
   width: 740px;
-margin: 0 auto;
+float: left;
 }
 .main-container {
   margin: 0 auto;
+  width: 960px;
 }
 .catalog-item .image {
   width: 218px;
