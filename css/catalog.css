@@ -90,6 +90,7 @@ body {
 
 .header__bookmarks {
   margin-right: 20px;
+  text-decoration: none;
 }
 
 .header__bookmarks a {
@@ -395,24 +396,33 @@ body {
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
+  border-bottom: 1px dotted #ee3643;
 }
 
 .sorting-price {
   clear: both;
 }
-
 .drill-sorting__up, .drill-sorting__down {
   display: inline-block;
 }
 
 .drill-sorting__up {
-  background: url('/img/-icon-up-dir.png') no-repeat 10px -33px;
+  background: url('#') no-repeat 10px -33px;
 }
 
 .drill-sorting__down {
-  background: url('img/-icon-down-dir.png') no-repeat 10px 97%;
+  background: url('#') no-repeat 10px 97%;
 }
-
+.drill-sorting__down ,
+.drill-sorting__up {
+  padding: 10px;
+  margin: 0 5px 0 46px;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  opacity: 0.5;
+}
 .side-bar {
   float: left;
   width: 220px;
@@ -574,7 +584,6 @@ body {
   text-transform: uppercase;
   margin-bottom: 25px;
 }
-
 .filter-list {
   color: #000000;
   font-family: "PT Sans";
@@ -583,8 +592,22 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   margin-bottom: 20px;
+  list-style-type: none;
+}
+.selecting__possibility input {
+  display: none;
 }
 
+.selecting__possibility label{
+  padding: 0 0 0 30px;
+}
+.selecting__possibility .selecting__possibility label {
+  background: url('#') no-repeat 0 -30px;
+}
+
+.selecting__possibility input:checked+label {
+  background: url('#') no-repeat 0 -58px;
+}
 .supply {
   display: flex;
   flex-direction: column;
@@ -592,7 +615,21 @@ body {
   width: 220px;
   position: relative;
 }
+.checkbox-supply input {
+  display: none;
+}
 
+.checkbox-supply label,
+.selecting__possibility label {
+  padding-left: 30px;
+}
+.checkbox-supply .checkbox label {
+  background: url('#') no-repeat 0 -106px;
+}
+
+.checkbox-supply input:checked+label {
+  background: url('#') no-repeat 0 -0px;
+}
 .supply-title {
   margin-bottom: 27px;
   width: 81px;
@@ -615,11 +652,11 @@ body {
 }
 
 .supply .checked-supply label {
-  background: url('../img/technomart-sprites2.png') no-repeat 0 -106px;
+  background: url('#') no-repeat 0 -106px;
 }
 
 .supply input:checked+label {
-  background: url('../img/technomart-sprites2.png') no-repeat 0 -0px;
+  background: url('#') no-repeat 0 -0px;
 }
 
 .filter-button__submit {
@@ -634,7 +671,7 @@ body {
 }
 
 .checkbox label {
-  background: url('../img/technomart-sprites2.png') no-repeat 0 -30px;
+  background: url('#') no-repeat 0 -30px;
 }
 
 
@@ -667,7 +704,6 @@ body {
 .catalog-item {
   font-size: 16px;
 }
-
 .catalog-item .flag {
   position: absolute;
   top: -1px;
@@ -735,7 +771,66 @@ body {
   width: 960px;
   margin: 0 auto;
 }
+.main-page-nav {
+  padding: 0;
+  margin: 20px 20px 20px 30px;
+  position: relative;
+}
+.main-page-nav li {
+  list-style: none;
+  display: inline-block;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 20px;
+}
+.main-page-nav a {
+  color: #000000;
+  text-decoration: none;
+}
 
+.main-page-nav:before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  background: url('#') no-repeat 0 0;
+}
+
+.main-page-nav li:first-child:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background: url('#') no-repeat 0 -19px;
+}
+
+.main-page-nav li:first-child:after {
+  content: '';
+  position: absolute;
+  left: 90px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background: url('#') no-repeat 0 -19px;
+}
+
+.main-page-nav li:last-child:before {
+  content: '';
+  position: absolute;
+  left: 210px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background: url('#') no-repeat 0 -19px;
+}
 .main-content {
   width: 740px;
   float: left;
