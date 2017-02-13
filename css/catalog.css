@@ -78,11 +78,11 @@ body {
 }
 
 .search-field-header label {
-  content: '';
+  display: inline-block;
   width: 17px;
   height: 16px;
-  opacity: 0.3;
-  background: url('img/icon-search.png') no-repeat -10px -15px;
+  background-image: url('../img/-icon-search.png');
+  background-repeat: no-repeat;
 }
 
 
