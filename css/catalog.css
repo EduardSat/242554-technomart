@@ -202,24 +202,19 @@ body {
 }
 
 .contacts-phone {
-  border: 3px solid #FFFFFF;
-  padding: 13px 52px 11px 74px;
-  margin: 0 0 10px 0;
-  color: #e9292a;
-  display: inline-block;
-  width: 150px;
-  height: 21px;
-  font-family: Cuprum;
+  padding: 8px;
+  border: 3px solid #ffffff;
   font-size: 21px;
-  font-weight: 400;
-  line-height: 17px;
+  line-height: 21px;
+  color: #ee3643;
 }
 
 .contacts-address {
-  width: 150px;
-  height: 13px;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
   color: #32425c;
-  padding-left: 10px;
 }
 
 .user-block {
@@ -233,6 +228,7 @@ body {
 }
 
 .user-name::before {
+  display: inline-block;
   content: "";
   width: 20px;
   height: 18px;
@@ -249,6 +245,7 @@ body {
 }
 
 .user-name:after {
+  display: inline-block;
   content: '';
   width: 20px;
   height: 20px;
@@ -1021,17 +1018,21 @@ body {
   margin-bottom: 20px;
   text-transform: uppercase;
 }
+
 .few-word__about p {
   font-family: 'OpenSans', sans-serif;
   color: #000000;
   line-height: 24px;
   margin: 0;
 }
+
 .about-text {
   width: 940px;
   padding: 40px 0;
   margin: 0 auto;
 }
+
+
 /*footer*/
 
 .upper-footer {
@@ -1197,6 +1198,7 @@ body {
 .social-instg:hover {
   background: #ee3643 url('../img/-icon-instagramm-copy.png');
 }
+
 .footer-feedback {
   margin-right: 53px;
 }
@@ -1210,7 +1212,6 @@ body {
   color: #ffffff;
   margin: 0;
   margin-bottom: 5px;
-
   text-align: center;
 }
 
@@ -1220,12 +1221,8 @@ body {
 
 .footer-feedback .main__to:hover {
   color: #000000;
-
   background-color: #ffffff;
 }
-
-
-
 
 .footer-developer a {
   color: #ffd180;
