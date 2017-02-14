@@ -39,11 +39,8 @@
         <div class="contacts-adress"> г. санкт-петербург, ул. Б. Конюшенная, д. 19/8 </div>
       </div>
       <div class="user-block">
-        <div class="user-name-field clearfix">
-          <a class="user-icon"></a>
-          <a class="user-name">Равшан Джамшутович</a>
-        </div>
-        <div class="account_order">
+        <a class="user-name">Равшан Джамшутович</a>
+        <div class="user-block__orientation">
           <a href="#" class="user-orders">Мои заказы</a>
           <a href="#" class="user-account">Личный кабинет</a>
         </div>
@@ -126,23 +123,23 @@
           </div>
           <ul class="filter-list">
             <li class="selecting__possibility">
-              <input type="radiobutton" id="manufacturer1" name="BOSCH" checked>
+              <input type="checkbox" id="manufacturer1" name="BOSCH" checked>
               <label for="manufacturer1">BOSCH</label>
             </li>
             <li class="selecting__possibility">
-              <input type="radiobutton" id="manufacturer2" name="Intersckol">
+              <input type="checkbox" id="manufacturer2" name="Intersckol">
               <label for="manufacturer2">ИНТЕРСКОЛ</label>
             </li>
             <li class="selecting__possibility">
-              <input type="radiobutton" id="manufacturer3" name="Makita" checked>
+              <input type="checkbox" id="manufacturer3" name="Makita" checked>
               <label for="manufacturer3">MAKITA</label>
             </li>
             <li class="selecting__possibility">
-              <input type="radiobutton" id="manufacturer4" name="Dewalt">
+              <input type="checkbox" id="manufacturer4" name="Dewalt">
               <label for="manufacturer4">DEAWLT</label>
             </li>
             <li class="selecting__possibility">
-              <input type="radiobutton" id="manufacturer5" name="Hitachi">
+              <input type="checkbox" id="manufacturer5" name="Hitachi">
               <label for="manufacturer5">HITACHI</label>
             </li>
           </ul>
@@ -152,12 +149,15 @@
             <span>Питание</span>
           </div>
           <div class="checkbox-supply">
-            <input type="radiobutton" id="Accumulator" checked>
-            <label for="Accumulator">Аккумуляторные</label>
-          </div>
-          <div class="checkbox-supply">
-            <input type="radiobutton" id="mains">
-            <label for="mains">Сетевые</label>
+            <ul class="filter-list">
+              <li class="supply-selecting__possibility">
+                <input type="radiobutton" id="Accumulator" checked>
+                <label for="Accumulator">Аккумуляторные</label>
+              </li>
+              <li class="supply-selecting__possibility">
+                <input type="radiobutton" id="mains">
+                <label for="mains">Сетевые</label>
+              </li>
           </div>
         </div>
         <button class="filter-button__submit" type="submit">показать</button>
@@ -288,20 +288,24 @@
           <div class="price" href="#">12500 P.</div>
         </div>
         <div class="paginator">
-          <a class="current" href="#1">1</a>
-          <span>&hellip;</span>
-          <a href="#3">3</a>
-          <a class="next" href="#next">СЛЕДУЮЩАЯ</a>
+          <a class="paginator__button curent-button" href="#1">1</a>
+          <a class="paginator__button" href="#2">2</a>
+          <a class="paginator__button" href="#3">3</a>
+          <a class="next-button" href="#next">СЛЕДУЮЩАЯ</a>
         </div>
       </div>
     </main>
     <section class="few_words__about clearfix">
-      <h2 class="about-title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
-      <span class="about-text">
+      <div class="container">
+      <div class="about-text">
+      <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+      <p>
 Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
 Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В <br>
  ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-</span>
+</p>
+</div>
+</div>
     </section>
   </div>
   <footer class="footer">
@@ -354,7 +358,7 @@
     </div>
     <div class="down-footer">
       <div class="footer-wrapper">
-          <span class="footer-copyright">&copy; 2010-2017 Компания «Техномарт»<br> Все права защищены</span>
+        <span class="footer-copyright">&copy; 2010-2017 Компания «Техномарт»<br> Все права защищены</span>
         <div class="footer-social">
           <a class="socia_vk social-icon" href="#">Вконтакте</a>
           <a class="social_fb social-icon" href="#">Фейсбук</a>
@@ -362,11 +366,11 @@
         </div>
         <div class="footer-feedback">
           <p>Обратная связь:</p>
-          <a href="#">mail@htmlacademy.ru</a>
+          <a class="main__to" href="#">mail@htmlacademy.ru</a>
         </div>
         <div class="footer-developer">
           <p class="footer-developer">Разработано-</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="reverense" href="https://htmlacademy.ru">HTML Academy</a>
         </div>
       </div>
     </div>
