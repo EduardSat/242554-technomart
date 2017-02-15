@@ -311,6 +311,410 @@ body {
 
 
 /*begining of main page*/
+.main-content {
+  width: 940px;
+  font-size: 0;
+  margin: 40px 0 50px;
+  font-family: 'Cuprum';
+  position: relative;
+}
+
+.category-item {
+  width: 300px;
+  height: 123px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 20px 20px;
+  padding: 20px;
+}
+
+.category-item:first-child {
+  margin-left: 0;
+}
+
+.category-text {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.materials {
+  background: #f6b22d url('../img/category-item-1.png');
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.instruments {
+  background: #4aafde url('../img/category-item-2.png');
+  background-repeat: no-repeat;
+}
+
+.machines {
+  background: #cc79d1 url('../img/category-item-3.png');
+  background-repeat: no-repeat;
+}
+
+.discount {
+  background: #85d179 url('../img/category-item-4_down.png');
+  background-repeat: no-repeat;
+  float: right;
+}
+
+.delivery {
+  background: #f6b22d url('../img/category-item-5_down.png');
+  background-repeat: no-repeat;
+  float: right;
+}
+
+.category-btn {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.287;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 13px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3%;
+  width: 135px;
+  height: 38px;
+}
+
+.category-btn:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.category-btn:active {
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+.slider-body {
+  display: none;
+}
+
+.slider-photogallery .active {
+  display: block;
+}
+
+.section-header {
+  background: #F7F3EC;
+  margin-bottom: 20px;
+}
+
+.section-header h1 {
+  float: left;
+  color: #32425c;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0 0 0 30px;
+  line-height: 89px;
+  max-width: 700px;
+}
+
+.section-header .btn {
+  width: 253px;
+  float: right;
+  margin: 25px 20px;
+}
+
+
+/*catalog block begins*/
+
+
+
+
+/*catalog block ends*/
+
+.companies {
+  margin: 0 auto;
+  width: 940px;
+}
+
+.companies-title {
+  width: 940px;
+  height: 89px;
+  margin: 0 auto;
+  margin-bottom: 65px;
+  background-color: #f7f3ec;
+}
+
+.companies-title p {
+  float: left;
+  padding: 33px 30px 35px 30px;
+  margin: 0;
+  vertical-align: middle;
+  font-size: 30px;
+  line-height: 38px;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.companies-popular__button {
+  width: 253px;
+  float: right;
+  margin: 25px 20px;
+  background-color: #ee3643;
+}
+
+.companies-popular__button {
+  width: 143px;
+  height: 10px;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.companies-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 218px;
+  margin-right: 20px;
+  text-align: center;
+  line-height: 143px;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+
+.companies-popular__button {
+  padding: 25px 24px 26px;
+  width: 253px;
+  height: 38px;
+  background-color: #ee3643;
+  width: 114px;
+  height: 12px;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.companies-item:hover {
+  border-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.companies-item:active {
+  border-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+}
+
+.companies-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.companies-item .image {
+  margin: auto;
+}
+
+.companies-item .image img {
+  max-width: 100%;
+  text-align: center;
+}
+
+.about-company {
+  position: relative;
+  padding: 75px 0 86px 0;
+}
+
+.company-left-col {
+  float: left;
+  width: 540px;
+}
+
+.service {
+  background: #F1F5F7;
+  margin-bottom: 70px;
+}
+
+.service-title {
+  margin: 0 0 24px 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: 'Cuprum', 'sans-serif';
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.service-text {
+  margin-bottom: 25px;
+  width: 380px;
+}
+
+.service-slider {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.service-slider-left__column {
+  float: left;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.service-slider-leftcolumn {
+  width: 200px;
+  padding: 20px;
+  background: #32425C;
+  color: #ffffff;
+  font-family: 'Cuprum';
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  border-bottom: 0.1px solid black;
+  display: block;
+}
+
+.service-slider-leftcolumn--active {
+  background: #FFFFFF;
+  color: #32425C;
+}
+
+.service-slider-right_column {
+  float: right;
+  width: 620px;
+}
+
+.service-slide {
+  display: none;
+  padding: 0 300px 100px 0;
+}
+
+.service-slide:nth-child(1) {
+  display: block;
+}
+
+.service-slider-right_column:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 10px;
+  height: 222px;
+}
+
+.service-slide h2 {
+  color: #32425c;
+  font-family: 'Cuprum';
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 0.667;
+  text-transform: uppercase;
+  margin: 0 0 30px;
+}
+
+.service-slide p {
+  font-weight: 300;
+  line-height: 1.846;
+  margin: 0;
+}
+
+.slide-delivery {
+  /*background: url картинки вставить*/
+}
+
+.slide-guarantee {
+  /*background: url картинки вставить*/
+}
+
+.slide-credit {
+  /*background: url картинки вставить*/
+}
+
+.slide-delivery img {
+  position: absolute;
+  width: 468px;
+  height: 261px;
+  top: 0;
+  left: 140px;
+}
+
+.slide-guarantee img {
+  position: absolute;
+  width: 388px;
+  height: 283px;
+  top: 0;
+  left: 210px;
+}
+
+.slide-credit img {
+  position: absolute;
+  width: 465px;
+  height: 285px;
+  left: 180px;
+}
+
+.btn--slide-credit {
+  width: 194px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.about-title {
+  margin-bottom: 22px;
+}
+
+.about-text {
+  margin-bottom: 22px;
+}
+
+.about-companies-list {
+  padding: 0;
+  margin: 0 0 37px 0;
+}
+
+.about-companies-item {
+  position: relative;
+  margin: 0;
+  padding: 0 0 20px 35px;
+  font-size: 18px;
+  line-height: 20px;
+  list-style: none;
+}
+
+.about-companies-item:last-child {
+  padding-bottom: 0;
+}
+
+.about-companies-item :before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  margin-right: 10px;
+  background-color: #fb565a;
+}
+
+.company-right-col {
+  width: 300px;
+  float: right;
+}
+
+.company-map {
+  padding-top: 10px;
+  margin-bottom: 35px;
+}
+
+.map-view {
+  display: inline-block;
+  vertical-align: middle;
+}
 
 .main-page-nav {
     font-size: 0;
@@ -450,7 +854,7 @@ body {
     padding: 10px;
     margin: 0 5px 0 46px;
     border: 0;
-    font: 0/0 a;
+    font: 0;
     text-shadow: none;
     color: transparent;
     opacity: 0.5;
@@ -767,6 +1171,8 @@ body {
     text-indent: -1000px;
     overflow: hidden;
     z-index: 20;
+    background: url("../img/new-flag");
+    background-repeat: no-repeat;
 }
 
 .catalog-item:nth-child(3n) {
@@ -774,7 +1180,8 @@ body {
 }
 
 .catalog-item .flag-new {
-    background: url("img/Shape_2.png") no-repeat 0 0;
+    background: url("../img/new-flag");
+    background-repeat: no-repeat;
 }
 
 .catalog-item .drill-actions {
@@ -789,7 +1196,7 @@ body {
 }
 
 .catalog-item .drill-actions .buy,
-.catalog-item .drill-actions .bookmark {
+.catalog-item .drill-actions .bookmarks {
     display: block;
     width: 129px;
     margin: 0 auto;
@@ -808,7 +1215,7 @@ body {
     border-radius: 3px;
 }
 
-.catalog-item .drill-actions .bookmark {
+.catalog-item .drill-actions .bookmarks {
     color: #32425c;
     background: white;
     border-bottom-color: #63a63e;
@@ -825,7 +1232,6 @@ body {
     width: 218px;
     height: 168px;
 }
-
 .catalog-item .image img {
     max-width: 100%;
 }
@@ -990,7 +1396,7 @@ body {
     line-height: 18px;
 }
 
-. .paginator a:hover {
+.paginator a:hover {
     border: 1px solid red;
 }
 
@@ -1077,7 +1483,7 @@ body {
 
 .footer-nav_list {
     display: flex;
-    margin-bottom 35px;
+    margin-bottom: 35px;
     padding: 0;
 }
 
@@ -1164,7 +1570,7 @@ body {
     height: 43px;
     line-height: 43px;
     border-radius: 50%;
-    font: 0/0 a;
+    font: 0px;
     color: transparent;
     background: #212A3A;
     text-shadow: none;
