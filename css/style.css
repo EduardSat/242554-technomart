@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Cuprum", "Pt Sans";
+}
+
+
+/*header begins*/
+
+.header-top {
+  font-family: Cuprum;
+  width: 940px;
+  height: 42px;
+  background-color: #293449;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.header-top__left {
+  padding-left: 10px;
+  padding-right: 150px;
+  display: flex;
+  align-items: center;
+  width: 320px;
+  text-decoration: none;
+}
+
+.logo {
+  align-self: center;
+  color: #ffffff;
+  font-size: 24px;
+  padding-right: 10px;
+  text-decoration: none;
+  font-size: 24px;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+.header-top__right {
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  width: 470px;
+  font-family: Cuprum;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.bookmarks {
+  width: 140px;
+  text-decoration: none;
+  color: #ffffff;
+  padding-right: 20px;
+}
+
+.basket {
+  width: 140px;
+  text-decoration: none;
+  color: #ffffff;
+  padding-right: 10px;
+}
+
+.order {
+  width: 150px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #63a63e;
+}
