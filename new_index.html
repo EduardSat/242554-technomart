@@ -13,15 +13,15 @@
     <div class="header-top">
       <div class="header-top__left">
         <a class="logo" href="#">Техномарт</a>
-        <form class="search">
-          <input id="search-field" placeholder="Поиск:" type="text" required>
-          <label for="search-field" type="submit"></label>
+        <form class="search" method="GET">
+          <label class="search__label" for="search-field" type="submit"></label>
+          <input class="search__input" id="search-field" placeholder="Поиск:" type="text" required>
         </form>
       </div>
       <div class="header-top__right">
         <a class="bookmarks" href="#">закладки:<span>0</span></a>
-        <a class="basket" href="#">корзина:<span>0</span></a>
-        <a class="order" href="#">Оформить заказ</a>
+        <a class="basket basket__icon" href="#">корзина:<span>0</span></a>
+        <a class="order order__icon" href="#"><span class="order__text">Оформить заказ</span></a>
       </div>
     </div>
     <div class="header-info">
@@ -35,34 +35,81 @@
         <a class="log-in" href="#">Регистрация</a>
       </div>
       <div class="nav-wrapper">
-    <nav class="nav">
-      <ul class="nav-list">
-        <li>
-          <a class="nav-item" href="#">Главная</a>
-        </li>
-        <li>
-          <a class="nav-item" href="#">Компания</a>
-        </li>
-        <li>
-          <a class="nav-item" href="#"> Каталог</a>
-        </li>
-        <li>
-          <a class="nav-item" href="#">Новости</a>
-        </li>
-        <li>
-          <a class="nav-item" href="#">Спецпредложения</a>
-        </li>
-        <li>
-          <a class="nav-item" href="#">Доставка</a>
-        </li>
-        <li>
-          <a class="nav-item" href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li>
+              <a class="nav-item" href="#">Главная</a>
+            </li>
+            <li>
+              <a class="nav-item" href="#">Компания</a>
+            </li>
+            <li>
+              <a class="nav-item" href="#"> Каталог</a>
+            </li>
+            <li>
+              <a class="nav-item" href="#">Новости</a>
+            </li>
+            <li>
+              <a class="nav-item" href="#">Спецпредложения</a>
+            </li>
+            <li>
+              <a class="nav-item" href="#">Доставка</a>
+            </li>
+            <li>
+              <a class="nav-item" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <!--header ends-->
+
+  <!--category-section begins-->
+  <section class="category-wrapper">
+    <div class="category-upper__block">
+      <div class="category-materials category-item">
+        <span class="category-text">Материалы</span>
+        <img class="category-img category-materials__img" src="../img/materials-img.png" width="44" height="65" alt="Materials">
+        <a class="btn category-materials__btn" href="#">на любой вкус</a>
+      </div>
+      <div class="category-instruments category-item">
+        <span class="category-text">Инструмент</span>
+        <img class="category-img category-instruments__img" src="../img/instruments-img.png" width="75" height="61" alt="instruments">
+        <a class="btn category-instruments__btn" href="#">на все случаи</a>
+      </div>
+      <div class="category-equipment category-item">
+        <span class="category-text">Техника</span>
+        <img class="category-img category-equipment__img" src="../img/equipment-img.png" width="78" height="62" alt="техника">
+        <a class="btn category-equipment__btn" href="#">для стройки</a>
+      </div>
+    </div>
+    <div class="category-down__block">
+      <div class=" category-gallery">
+        <div class="category-gallery-title">
+          <span class="gallery-title">перфораторы</span>
+          <span class="gallery-text">Настроящие мужские игрушки</span>
+        </div>
+        <button class="gallery-btn__prev" type="button"></button>
+        <button class="gallery-btn__next" type="button"></button>
+        <a class="gallery-btn" href="#">открыть каталог</a>
+      </div>
+      <div class="category-right__column">
+        <div class="category-item category-sales">
+          <span class="category-sales__text">Скидки50%</span>
+          <img class="category-img category-sales__img" src="../img/sales-img.png" width="59" height="72" alt="sales">
+          <a class="category-sales__btn btn" href="#">на 350 товаров</a>
+        </div>
+        <div class="category-item category-delivery">
+          <span class="category-text">Доставка</span>
+          <img class="category-img category-delivery__img" src="../img/delivery-img.png" width="78" height="63" alt="delivery">
+          <a class="category-delivery__btn btn" href="#">бесплатно</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--category-section ends-->
+
 </body>
+
 </html>

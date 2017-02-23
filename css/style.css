@@ -31,14 +31,8 @@ body {
   width: 320px;
   text-decoration: none;
 }
-
-.search {
-  width: 160px;
-}
-
 .logo {
   width: 220px;
-  align-self: center;
   color: #ffffff;
   font-size: 24px;
   padding-right: 10px;
@@ -47,7 +41,32 @@ body {
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
 }
+.search {
+  width: 160px;
+}
 
+.search__input {
+  width: 140px;
+  height: 40px;
+  padding-left: 49px;
+  border: none;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  color: #ffffff;
+  background-color: #293449;
+  outline: none;
+}
+
+.search__label {
+  position: absolute;
+  display: inline-block;
+  top: 15px;
+  width: 17px;
+  height: 16px;
+  color: #6a7180;
+  background: url(../img/search-icon.png);
+}
 .header-top__right {
   padding-right: 10px;
   display: flex;
@@ -58,26 +77,46 @@ body {
   font-weight: 400;
   line-height: 18px;
 }
-
+.bookmarks::before {
+  position: absolute;
+  display: inline-block;
+  top: 15px;
+  background: url(../img/bookmark_icon.png);
+  background-repeat: no repeat;
+  color: #6a7180;
+}
 .bookmarks {
+  height: 22px;
   width: 140px;
   text-decoration: none;
   color: #ffffff;
   padding-right: 20px;
 }
-
 .basket {
+  height: 22px;
   width: 140px;
   text-decoration: none;
   color: #ffffff;
   padding-right: 10px;
 }
 
+.basket__icon::before {
+  position: absolute;
+  background: url(../img/basket-icon.png);
+  background-repeat: no-repeat;
+}
+
 .order {
+  height: 22px;
+  display: block;
   width: 150px;
   text-decoration: none;
   color: #ffffff;
   background-color: #63a63e;
+}
+
+.order__text {
+  padding: 14px 22px 13px 20px;
 }
 
 .header-info {
@@ -91,6 +130,7 @@ body {
 }
 
 .info-text {
+  margin-top: 59px;
   display: flex;
   width: 196px;
   height: 60px;
@@ -98,6 +138,7 @@ body {
 }
 
 .contacts {
+  margin-top: 59px;
   width: 300px;
   height: 94px;
   display: flex;
@@ -106,27 +147,25 @@ body {
 }
 
 .contacts__phone {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 270px;
-  color: #e9292a;
+  text-align: center;
+  padding: 8px;
   border: 3px solid #ffffff;
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+  width: 270px;
 }
 
 .contacts__adress {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 250px;
-  height: 13px;
-  color: #32425c;
+  margin-top: 10px;
+  text-align: center;
   font-size: 14px;
-  font-weight: 400;
   line-height: 24px;
+  color: #32425c;
 }
 
 .auth {
+  margin-top: 30px;
   width: 300px;
   display: flex;
   justify-content: space-between;
@@ -135,6 +174,7 @@ body {
 .enter,
 .log-in {
   background: #ffffff;
+  text-align: center;
 }
 
 .enter {
@@ -161,9 +201,6 @@ body {
   font-weight: 400;
   line-height: 18px;
 }
-
-
-/*header ends*/
 
 .nav-wrapper {
   width: 960px;
@@ -193,4 +230,211 @@ body {
   font-weight: 400;
   line-height: 17px;
   text-decoration: none;
+}
+
+
+/*header ends*/
+
+
+/*category section starts*/
+
+.category-wrapper {
+  margin-top: 59px;
+  display: flex;
+  width: 940px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+
+/*сategory-upper__block starts*/
+
+.category-upper__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 123px;
+}
+
+.category-text {
+  align-self: flex-start;
+  width: 111px;
+  height: 22px;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  padding-top: 26px;
+  padding-left: 23px;
+}
+
+.category-sales__text {
+  align-self: flex-start;
+  width: 116px;
+  height: 21px;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  padding-top: 26px;
+  padding-left: 23px;
+}
+
+.category-img {
+  align-self: flex-end;
+  background-color: #ffffff;
+}
+
+.btn {
+  background-image: url(../img/category-btn__layer.png);
+  background-color: #000000;
+  opacity: 0.1;
+  align-self: flex-start;
+  width: 135px;
+  height: 38px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.category-materials__img {
+  padding-right: 43px;
+}
+
+.category-instruments__img {
+  padding-right: 28px;
+}
+
+.category-equipment__img {
+  padding-right: 31px;
+}
+
+
+/*category-upper__block ends*/
+
+
+/*category-down__block starts*/
+
+.category-down__block {
+  width: 940px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+/*gallery-block starts*/
+
+.category-gallery {
+  width: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url("../img/guy-with-drill.jpg");
+}
+
+.category-gallery-title {
+  display: flex;
+  flex-direction: column;
+  width: 620px;
+  height: 105px;
+  background-image: url(../img/gallery-layer.png);
+}
+
+.gallery-title {
+  padding-top: 26px;
+  padding-left: 26px;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.gallery-text {
+  padding-left: 26px;
+  color: #ffffff;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.gallery-btn {
+  background-image: url(gallery-btn-layer.png);
+  width: 195px;
+  height: 38px;
+  background-color: #ee3643;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.gallery-block__btns {
+  display: flex;
+}
+
+.gallery-btn__prev {
+  width: 22px;
+  height: 40px;
+  background-image: url(../img/gallery-btn__prev.png);
+  align-self: flex-start;
+}
+
+.gallery-btn__next {
+  width: 22px;
+  height: 40px;
+  align-self: flex-end;
+  background-image: url(../img/gallery-btn__next.png);
+}
+
+
+/*gallery-block ends*/
+
+.category-right__column {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-materials {
+  display: flex;
+  background-color: #f6b22d;
+}
+
+.category-instruments {
+  display: flex;
+  background-color: #4aafde;
+}
+
+.category-equipment {
+  display: flex;
+  background-color: #cc79d1;
+}
+
+.category-sales {
+  background-color: #85d179;
+}
+
+.category-delivery {
+  background-color: #f6b22d;
 }
