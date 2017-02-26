@@ -12,19 +12,38 @@
   <header>
     <div class="header-top">
       <div class="header-top__left">
-        <a class="logo" href="#">Техномарт</a>
-        <form class="search" method="GET">
+        <div class="logo">
+        <a class="logo-btn" href="#">Техномарт</a>
+        </div>
+       <form class="search">
           <label class="search__label" for="search-field" type="submit"></label>
           <input class="search__input" id="search-field" placeholder="Поиск:" type="text" required>
-        </form>
+        </form> 
       </div>
       <div class="header-top__right">
-        <a class="bookmarks" href="#">закладки:<span>0</span></a>
-        <a class="basket basket__icon" href="#">корзина:<span>0</span></a>
-        <a class="order order__icon" href="#"><span class="order__text">Оформить заказ</span></a>
+        <ul class="top-header__menu">
+          <li class="menu-item bookmark__btn">
+            <a href="#" class="menu-link">
+              <span class="menu-link__icon bookmarks-icon"></span>
+              <span class="menu-link__text">Закладки: 0</span>
+            </a>
+          </li>
+          <li class="menu-item basket__btn">
+            <a href="#" class="menu-link">
+              <span class="menu-link__icon basket-icon"></span>
+              <span class="menu-link__text">Корзина: 0</span>
+            </a>
+          </li>
+          <li class="menu-order order-btn">
+            <a href="#" class="menu-link">
+              <span class="menu-order__text">Оформить заказ</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="header-info">
+      <div class="info-block">
       <div class="info-text">Интернет-магазин строительных материалов и инструментов для ремонта</div>
       <div class="contacts">
         <div class="contacts__phone">+7 (812) 555-05-55</div>
@@ -33,6 +52,7 @@
       <div class="auth">
         <a class="enter" href="#">Войти</a>
         <a class="log-in" href="#">Регистрация</a>
+      </div>
       </div>
       <div class="nav-wrapper">
         <nav class="nav">
@@ -50,7 +70,7 @@
               <a class="nav-item" href="#">Новости</a>
             </li>
             <li>
-              <a class="nav-item" href="#">Спецпредложения</a>
+              <a class="nav-item special-offers__item" href="#">Спецпредложения</a>
             </li>
             <li>
               <a class="nav-item" href="#">Доставка</a>
@@ -67,7 +87,7 @@
 
   <!--category-section begins-->
   <section class="category-wrapper">
-    <div class="category-upper__block">
+
       <div class="category-materials category-item">
         <span class="category-text">Материалы</span>
         <img class="category-img category-materials__img" src="../img/materials-img.png" width="44" height="65" alt="Materials">
@@ -83,8 +103,6 @@
         <img class="category-img category-equipment__img" src="../img/equipment-img.png" width="78" height="62" alt="техника">
         <a class="btn category-equipment__btn" href="#">для стройки</a>
       </div>
-    </div>
-    <div class="category-down__block">
       <div class=" category-gallery">
         <div class="category-gallery-title">
           <span class="gallery-title">перфораторы</span>
@@ -106,7 +124,6 @@
           <a class="category-delivery__btn btn" href="#">бесплатно</a>
         </div>
       </div>
-    </div>
   </section>
   <!--category-section ends-->
 
