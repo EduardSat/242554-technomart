@@ -11,6 +11,24 @@ body {
 }
 
 
+/*.main-content__wrapper {
+  position: relative;
+  min-height: 100%;
+  min-width: 970px;
+  height: auto;
+}
+.main-content__wrapper::after {
+  content: "";
+  height: 300px;
+  display: block;
+}
+.footer-bottom {
+  min-width: 970px;
+  height: 300px;
+  margin-top: -81px;
+}*/
+
+
 /*header begins*/
 
 header {
@@ -415,33 +433,43 @@ header {
   text-align: center;
   padding-right: 29px;
 }
+
 .nav-link__main {
   padding-left: 51px;
 }
+
 .nav-link__company {
   padding-left: 29px;
 }
+
 .nav-link__catalog {
   padding-left: 24px;
 }
+
 .nav-item__news {
   width: 100px;
 }
+
 .nav-link__news {
   padding-left: 20px;
 }
+
 .nav-link__special {
   padding-left: 10px;
 }
+
 .nav-link__delivery {
   padding-left: 14px;
 }
+
 .nav-link__contacts {
   padding-right: 6px;
 }
+
 .nav-item__special {
   width: 169px;
 }
+
 .nav-link {
   color: #ffffff;
   font-family: Cuprum;
@@ -1215,7 +1243,7 @@ header {
   display: flex;
   margin: 0 auto;
   width: 940px;
-  margin-bottom: 81px;
+  margin-bottom: 86px;
 }
 
 .about-companies__text {
@@ -1361,8 +1389,7 @@ footer {
 
 .footer-top {
   display: flex;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-bottom: 50px;
 }
 
 .footer-top__left {
@@ -1379,7 +1406,7 @@ footer {
   height: 68px;
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .logo-button {
@@ -1397,22 +1424,93 @@ footer {
 
 .footer-contacts {
   display: flex;
-  width: 322px;
   color: #f1f5f7;
   font-family: Cuprum;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
+  margin-left: 3px;
 }
 
 .footer-top__right {
   width: 550px;
   display: flex;
   flex-direction: column;
+  margin-top: 38px;
 }
 
 .footer-nav {
+  width: 556px;
+}
+
+.footer-nav__list {
   display: flex;
+  padding-left: 0;
+  list-style-type: none;
+  text-transform: capitalize;
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+}
+
+.footer-list__map {
+  width: 556px;
+  margin-bottom: 34px;
+}
+
+.footer-nav__category {
+  margin-left: 30px;
+}
+
+.list-item__map {
+  width: 120px;
+}
+
+.item-map__link {
+  color: #f1f5f7;
+  text-decoration: none;
+}
+
+.map-link__company {
+  padding-left: 8px;
+}
+
+.map-link__news {
+  padding-left: 27px;
+}
+
+.map-link__catalog {
+  padding-left: 32px;
+}
+
+.map-link__delivery {
+  padding-left: 38px;
+}
+
+.map-link__contacts {
+  padding-left: 50px;
+}
+
+.list-item__category {
+  width: 115px;
+}
+
+.item-category__link {
+  color: #ffd180;
+  text-decoration: none;
+}
+.category-link__equipment {
+  padding-left: 26px;
+}
+
+.category-link__instruments {
+  padding-left: 26px;
+}
+
+.category-link__special {
+  padding-left: 53px;
 }
 
 
@@ -1424,8 +1522,8 @@ footer {
 }
 
 .footer-bottom__container {
+  width: 940px;
   align-items: center;
-  justify-content: space-around;
   height: 107px;
   display: flex;
 }
