@@ -56,11 +56,8 @@ header {
   align-self: center;
   color: #ffffff;
   font-family: Cuprum;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
   text-decoration: none;
-  padding-left: 55px;
+  padding-left: 56px;
 }
 
 .logo:hover {
@@ -143,6 +140,9 @@ header {
 
 .top-header__menu {
   display: flex;
+  margin: 0;
+  padding-left: 0;
+  margin-left: 39px;
 }
 
 .menu-item {
@@ -186,7 +186,11 @@ header {
   color: #ffffff;
   font-family: Cuprum;
   text-decoration: none;
-  padding-top: 13px;
+  padding-top: 12px;
+}
+
+.menu-link__order {
+  padding-top: 11px;
 }
 
 .bookmark-icon::before {
@@ -246,6 +250,8 @@ header {
   flex-direction: row;
   align-items: center;
   margin-bottom: 44px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .info-block {
@@ -253,8 +259,6 @@ header {
   display: flex;
   align-items: center;
   width: 940px;
-  padding-left: 10px;
-  padding-right: 10px;
   justify-content: space-around;
 }
 
@@ -266,7 +270,7 @@ header {
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
-  margin-left: 46px;
+  margin-left: 39px;
 }
 
 .contacts {
@@ -275,13 +279,13 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 59px;
+  margin-left: 45px;
 }
 
 .contacts__phone::before {
   content: "";
   left: 10px;
-  top: 15px;
+  top: 8px;
   width: 19px;
   height: 19px;
   position: absolute;
@@ -290,23 +294,25 @@ header {
 }
 
 .contacts__phone {
+  width: 270px;
+  height: 45px;
   position: relative;
   text-align: center;
-  padding-top: 14px;
-  padding-right: 52px;
-  padding-left: 59px;
-  padding-bottom: 11px;
+  padding-top: 10px;
+  padding-right: 41px;
+  padding-left: 58px;
   border: 3px solid #ffffff;
   color: #ee3643;
   font-family: Cuprum;
   font-size: 21px;
   font-weight: 400;
   line-height: 18px;
+  margin-bottom: 4px;
 }
 
 .contacts__adress {
   width: 250px;
-  margin-left: 10px;
+  margin-left: 7px;
   margin-right: 8px;
   text-align: center;
   color: #32425c;
@@ -314,7 +320,6 @@ header {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  margin-top: 10px;
 }
 
 
@@ -406,10 +411,37 @@ header {
 
 .nav-item {
   padding-top: 20px;
-  flex-grow: 1;
+  width: 137px;
   text-align: center;
+  padding-right: 29px;
 }
-
+.nav-link__main {
+  padding-left: 51px;
+}
+.nav-link__company {
+  padding-left: 29px;
+}
+.nav-link__catalog {
+  padding-left: 24px;
+}
+.nav-item__news {
+  width: 100px;
+}
+.nav-link__news {
+  padding-left: 20px;
+}
+.nav-link__special {
+  padding-left: 10px;
+}
+.nav-link__delivery {
+  padding-left: 14px;
+}
+.nav-link__contacts {
+  padding-right: 6px;
+}
+.nav-item__special {
+  width: 169px;
+}
 .nav-link {
   color: #ffffff;
   font-family: Cuprum;
@@ -847,7 +879,7 @@ header {
 }
 
 .drill-title {
-  width: 155px;
+  width: 158px;
   color: #000000;
   font-family: "PT Sans";
   font-size: 18px;
@@ -893,7 +925,7 @@ header {
   padding-top: 10px;
   padding-left: 36px;
   border-radius: 3px;
-  margin-left: 10px;
+  margin-left: 8px;
 }
 
 .drill-btn::after {
@@ -939,8 +971,8 @@ header {
 }
 
 .popular-manuf__title {
-  margin-left: 30px;
-  margin-right: 268px;
+  margin-left: 24px;
+  margin-right: 273px;
   color: #32425c;
   font-family: Cuprum;
   font-size: 30px;
@@ -1042,7 +1074,7 @@ header {
   width: 100%;
   height: 522px;
   background-color: #f2f6f8;
-  margin-bottom: 88px;
+  margin-bottom: 82px;
 }
 
 .services-wrapper {
@@ -1091,6 +1123,17 @@ header {
   top: 17px;
   left: 733px;
   background: url(../img/slider-car.png);
+  background-repeat: no-repeat;
+}
+
+.services-slider::after {
+  position: absolute;
+  content: "";
+  width: 467px;
+  height: 261px;
+  top: 17px;
+  left: 471px;
+  background: url(../img/delivery-car__shadow.png);
   background-repeat: no-repeat;
 }
 
@@ -1248,7 +1291,6 @@ header {
   padding-top: 11px;
   padding-left: 41px;
   text-decoration: none;
-  margin-left: 1px;
   border-radius: 3px;
 }
 
@@ -1279,7 +1321,7 @@ header {
 }
 
 .companies-contacts__map {
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .companies-contacts__btn {

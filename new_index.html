@@ -32,7 +32,7 @@
             </a>
           </li>
           <li class="menu-order order-btn">
-            <a href="#" class="menu-link">
+            <a href="#" class="menu-link menu-link__order">
               <span class="menu-order__text">Оформить заказ</span>
             </a>
           </li>
@@ -56,25 +56,25 @@
       <nav class="navigation">
         <ul class="nav-list">
           <li class="nav-item">
-            <a class="nav-link" href="#">Главная</a>
+            <a class="nav-link nav-link__main" href="#">Главная</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Компания</a>
+            <a class="nav-link nav-link__company" href="#">Компания</a>
+          </li>
+          <li class="nav-item nav-item__news">
+            <a class="nav-link nav-link__catalog" href="#"> Каталог</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"> Каталог</a>
+            <a class="nav-link nav-link__news" href="#">Новости</a>
+          </li>
+          <li class="nav-item nav-item__special">
+            <a class="nav-link nav-link__special" href="#">Спецпредложения</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Новости</a>
+            <a class="nav-link nav-link__delivery" href="#">Доставка</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Спецпредложения</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Доставка</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Контакты</a>
+            <a class="nav-link nav-link__contacts" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -129,25 +129,25 @@
           <a href="#" class="actions-buy">купить</a>
           <a href="#" class="actions-bookmarks">в закладки</a>
         </div>-->
-        <span class="drill-title"><span>перфоратор</span> bosh bfg 9000</span>
+        <span class="drill-title"><span>перфоратор</span> bosch bfg 9000</span>
         <span class="drill-price__old">32500 Р.</span>
         <a class="drill-btn" href="#">25500 Р.</a>
       </div>
       <div class="drill-item">
         <img class="drill-img img__bfg-3000" src="img/drill-type2.jpg" width="127" height="112" alt="drill">
-        <span class="drill-title"><span>перфоратор</span> bosh bfg 3000</span>
+        <span class="drill-title"><span>перфоратор</span> bosch bfg 3000</span>
         <span class="drill-price__old">22500 Р.</span>
         <a class="drill-btn" href="#">15500 Р.</a>
       </div>
       <div class="drill-item">
         <img class="drill-img img__bfg-6000" src="img/drill-type1.jpg" width="144" height="128" alt="drill">
-        <span class="drill-title"><span>перфоратор</span> bosh bfg 6000</span>
+        <span class="drill-title"><span>перфоратор</span> bosch bfg 6000</span>
         <span class="drill-price__old">30500 Р.</span>
         <a class="drill-btn" href="#">25500 Р.</a>
       </div>
       <div class="drill-item">
         <img class="drill-img img__bfg-2000" src="img/drill-type2.jpg" width="127" height="112" alt="drill">
-        <span class="drill-title drill-title__2000"><span>перфоратор</span> bosh bfg 2000</span>
+        <span class="drill-title drill-title__2000"><span>перфоратор</span> bosch bfg 2000</span>
         <a class="drill-btn" href="#">12500 Р.</a>
       </div>
     </div>
@@ -259,12 +259,14 @@
     <div class="about-companies__contacts">
       <span class="companies-contacts__title">контакты</span>
       <span class="companies-contacts__text"> Вы можете забрать товар сами, заехав в наш офис:</span>
-      <img class="companies-contacts__map" src="img/index-map.jpg" width="300" height="158" alt="mini-map">
+      <a class="companies-contacts__map">
+      <img src="img/index-map.jpg" width="300" height="158" alt="mini-map">
+      </a>
       <a href="#" class="companies-contacts__btn">заблудились? напишите нам</a>
     </div>
   </section>
   <!--category-section ends-->
-  <!--<footer>
+  <footer>
     <div class="footer-wrapper">
       <div class="footer-top">
         <div class="footer-top__left">
@@ -334,7 +336,7 @@
         </div>
       </div>
     </div>
-  </footer>-->
+  </footer>
 </body>
 
 </html>
