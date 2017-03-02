@@ -1042,7 +1042,7 @@ header {
   width: 100%;
   height: 522px;
   background-color: #f2f6f8;
-  margin-bottom: 82px;
+  margin-bottom: 88px;
 }
 
 .services-wrapper {
@@ -1117,9 +1117,11 @@ header {
   top: 189px;
   left: 230px;
 }
+
 .select-input {
-  display: none;               
+  display: none;
 }
+
 .options__delivery {
   height: 61px;
   background-color: #ffffff;
@@ -1137,6 +1139,7 @@ header {
   padding-left: 23px;
   padding-top: 7px;
 }
+
 .services-slider__text {
   display: flex;
   flex-direction: column;
@@ -1161,6 +1164,142 @@ header {
 
 
 /*services sections ends*/
+
+
+/*about-companies section*/
+
+.about-companies {
+  display: flex;
+  margin: 0 auto;
+  width: 940px;
+  margin-bottom: 81px;
+}
+
+.about-companies__text {
+  display: flex;
+  flex-direction: column;
+  width: 519px;
+  color: #000000;
+  font-weight: 400;
+  margin-right: 121px;
+}
+
+.about-title {
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
+
+.about-text {
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.text-paragraph__1 {
+  margin-bottom: 24px;
+}
+
+.text-paragraph__2 {
+  margin-bottom: 5px;
+}
+
+.about-companies__list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 16px;
+}
+
+.companies-list__item {
+  position: relative;
+  padding-left: 38px;
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 20px;
+  list-style-type: none;
+  padding-bottom: 20px;
+}
+
+.companies-item__1::before,
+.companies-item__2::before,
+.companies-item__3::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  top: 9px;
+  left: 1px;
+  background-color: #fb565a;
+}
+
+.about-btn {
+  height: 38px;
+  width: 220px;
+  background-color: #ee3643;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-top: 11px;
+  padding-left: 41px;
+  text-decoration: none;
+  margin-left: 1px;
+  border-radius: 3px;
+}
+
+.about-companies__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.companies-contacts__title,
+.companies-contacts__text {
+  width: 179px;
+  color: #000000;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.companies-contacts__title {
+  font-family: Cuprum;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
+
+.companies-contacts__text {
+  font-family: "PT Sans";
+  font-size: 13px;
+  margin-bottom: 31px;
+}
+
+.companies-contacts__map {
+  margin-bottom: 40px;
+}
+
+.companies-contacts__btn {
+  width: 300px;
+  height: 38px;
+  background-color: #ee3643;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-top: 11px;
+  padding-left: 65px;
+  border-radius: 3px;
+}
+
+
+/*about-companies section ends*/
 
 
 /*footer*/
