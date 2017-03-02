@@ -561,24 +561,30 @@ header {
   margin-left: 25px;
   padding-top: 8px;
 }
+
 .materials-btn {
   padding-top: 8px;
   padding-left: 25px;
 }
+
 .instruments-btn {
   padding-top: 8px;
   padding-left: 27px;
 }
+
 .equipment-btn {
   padding-top: 9px;
   padding-left: 30px;
 }
+
 .sales-btn {
   padding-left: 22px;
 }
+
 .delivery-btn {
   padding-left: 36px;
 }
+
 .category-btn:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -975,27 +981,34 @@ header {
   align-items: center;
   justify-content: center;
 }
+
 .img__metabo {
   margin-left: 8px;
   margin-bottom: 8px;
 }
+
 .img__interscol {
   margin-bottom: 14px;
 }
+
 .img__makita {
   margin-left: 2px;
   margin-bottom: 5px;
 }
+
 .img__dewalt {
   margin-left: 3px;
   margin-bottom: 5px;
 }
+
 .img__hitachi {
   margin-left: 8px;
 }
+
 .img__aeg {
   margin-left: 5px;
 }
+
 .item__interscol,
 .item__metabo {
   margin-right: 0;
@@ -1074,14 +1087,14 @@ header {
   position: absolute;
   content: "";
   width: 206px;
-height: 146px;
+  height: 146px;
   top: 17px;
   left: 733px;
   background: url(../img/slider-car.png);
   background-repeat: no-repeat;
 }
 
-.services-slider__options {
+.services-slider__select {
   display: flex;
   flex-direction: column;
   width: 240px;
@@ -1091,6 +1104,7 @@ height: 146px;
   line-height: 30px;
   margin-right: 80px;
   text-transform: capitalize;
+  list-style-type: none;
 }
 
 .services-wrapper::after {
@@ -1103,7 +1117,9 @@ height: 146px;
   top: 189px;
   left: 230px;
 }
-
+.select-input {
+  display: none;               
+}
 .options__delivery {
   height: 61px;
   background-color: #ffffff;
@@ -1121,7 +1137,6 @@ height: 146px;
   padding-left: 23px;
   padding-top: 7px;
 }
-
 .services-slider__text {
   display: flex;
   flex-direction: column;
