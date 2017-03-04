@@ -1188,21 +1188,10 @@ header {
   top: 189px;
   left: 230px;
 }
-
-.select-input {
+.services-slider__select input[type='radio'] {
   display: none;
 }
-
-.options__delivery {
-  height: 61px;
-  background-color: #ffffff;
-  padding-left: 22px;
-  padding-top: 7px;
-  color: #32425c;
-}
-
-.options__guarantees,
-.options__credit {
+.options-select__label {
   height: 61px;
   color: #ffffff;
   box-shadow: inset 0 -1px 0 #293449;
@@ -1210,7 +1199,26 @@ header {
   padding-left: 23px;
   padding-top: 7px;
 }
+.options-select__label:hover {
+  background-color: #1d3247;
+}
+.options-input__delivery:checked ~ .options-select__label .select__delivery,
+.options-input__guarantee:checked ~ .options-select__label .select__guarantee,
+.options-input__credit:checked ~ .options-select__label .select__credit {
+  background-color: #ffffff;
+  color: #243f5a;
+}
+/*.options-input__delivery:checked ~ .services-slider__popup .services-slider__text {
 
+}
+.options-input__guarantee:checked ~ .services-slider__popup .services-slider__text {
+
+}
+.options-input__credit:checked ~ .services-slider__popup .services-slider__text {
+}*/
+.services-slider__popup {
+display: none;
+}
 .services-slider__text {
   display: flex;
   flex-direction: column;
@@ -1518,7 +1526,6 @@ footer {
 
 .footer-bottom {
   background-color: #293449;
-  width: 100%;
 }
 
 .footer-bottom__container {
@@ -1535,11 +1542,13 @@ footer {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
+  margin-right: 171px;
 }
 
 .footer-social {
   display: flex;
   width: 150px;
+  margin-right: 93px;
 }
 
 .social-button {
@@ -1572,6 +1581,7 @@ footer {
   font-weight: 400;
   line-height: 18px;
   color: #ffffff;
+  margin-right: 53px;
 }
 
 .mail-to,

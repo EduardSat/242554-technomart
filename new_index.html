@@ -190,14 +190,14 @@
       </div>
       <div class="services-slider">
         <div class="services-slider__select">
-          <input class="select-input" type="radio" id="delivery-option" checked>
-          <label class="options__delivery" for="delivery-option">доставка</label>
-          <input class="select-input" type="radio" id="guarantee-option">
-          <label class="options__guarantees" for="guarantee-option">гарантия</label>
-          <input class="select-input" type="radio" id="credit-option">
-          <label class="options__credit" for="credit-option">кредит</label>
+          <input class="options-input__delivery" type="radio" id="delivery-option">
+          <label class="options-select__label select__delivery" for="delivery-option">доставка</label>
+          <input class="options-input__guarantee" type="radio" id="guarantee-option">
+          <label class="options-select__label select__guarantee" for="guarantee-option">гарантия</label>
+          <input class="options-input__credit" type="radio" id="credit-option">
+          <label class="options-select__label select__credit" for="credit-option">кредит</label>
         </div>
-        <div class="servic-slider__delivery">
+        <div class="services-slider__delivery services-slider__popup">
           <div class="services-slider__text">
             <span class="slider-text__title">доставка</span>
             <span class="slider-text">
@@ -208,7 +208,7 @@
               </span>
           </div>
         </div>
-        <!--<div class="servic-slider__guarantees">
+        <div class="services-slider__guarantees services-slider__popup">
           <div class="services-slider__text">
             <span class="slider-text__title">гарантия</span>
             <span class="slider-text">
@@ -220,14 +220,14 @@
                   </span>
           </div>
         </div>
-        <div class="servic-slider__credit">
+        <div class="services-slider__credit services-slider__popup">
           <div class="services-slider__text">
             <span class="slider-text__title">кредит</span>
             <span class="slider-text">
                   Залезть в долговую яму стало проще!<br>
                   Кредитные консультанты придут вам на помощь.
                    </span>
-                   <a href="#" class="credit-btn">отправить заявку</a>-->
+                   <a href="#" class="credit-btn">отправить заявку</a>
       </div>
     </div>
     <!--</div>
@@ -336,5 +336,13 @@
     </div>
   </footer>
 </body>
-
+<!--<script>
+  var link= document.querySelector(".options__delivery");
+  var link= document.querySelector(".options__guarantees");
+  var link= document.querySelector(".options__credit");
+  link.addEventListener("click",function(click) {
+  event.preventDefault();
+  popup.classList.toogle("services-slider__popup");
+  });
+</script>-->
 </html>
