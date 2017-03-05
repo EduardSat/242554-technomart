@@ -689,6 +689,39 @@ header {
   height: 80px;
   background-color: #f7f3ec;
   margin-bottom: 9px;
+  position: relative;
+}
+
+.price-bar {
+  width: 171px;
+  height: 2px;
+  background-color: #00ca74;
+  margin-top: 37px;
+  margin-left: 29px;
+}
+
+.range-controls__left {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 2px 0 rgba(0, 1, 1, 0.14);
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: 28px;
+  left: 34px;
+}
+
+.range-controls__right {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 2px 0 rgba(0, 1, 1, 0.14);
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: 28px;
+  right: 25px;
 }
 
 .price-controls {
@@ -744,7 +777,8 @@ header {
   margin-bottom: 17px;
 }
 
-.filter-developers__title {
+.filter-developers__title,
+.filter-supply__title {
   width: 141px;
   color: #000000;
   font-family: "PT Sans";
@@ -765,7 +799,8 @@ header {
   position: relative;
 }
 
-.developers__label {
+.developers__label,
+.supply-label {
   color: #000000;
   font-family: "PT Sans";
   font-size: 15px;
@@ -796,14 +831,8 @@ header {
   width: 220px;
   height: 160px;
 }
-
-.filter-supply__title {
-  color: #000000;
-  font-family: "PT Sans";
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 30px;
-  text-transform: uppercase;
+.supply-list {
+  list-style-type: none;
 }
 
 
@@ -847,6 +876,31 @@ header {
   list-style-type: none;
 }
 
+.drill-sorting__controls {
+  width: 60px;
+  position: relative;
+}
+
+.sorting-controls__up {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 10px;
+  background: url(../img/sorting-icon__up.png);
+  background-repeat: no-repeat;
+  top: 12px;
+  left: 1px;
+}
+.sorting-controls__down {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 10px;
+  background: url(../img/sorting-icon__down.png);
+  background-repeat: no-repeat;
+  right: 16px;
+  top: 12px;
+}
 .drill-sorting__link {
   text-decoration: none;
   font-family: "PT Sans";
@@ -854,9 +908,16 @@ header {
   font-weight: 400;
   line-height: 18px;
 }
+
+.drill-sorting__link {
+  border-bottom: 1px dotted #ee3643;
+}
+
 .price-link {
   color: #ee3643;
+  border: none;
 }
+
 .sorting-item__price {
   padding-top: 9px;
   width: 80px;
@@ -867,10 +928,12 @@ header {
   padding-top: 9px;
   width: 140px;
 }
-
-.drill-item:nth-child(6),
-.drill-item:nth-child(3),
-.drill-item:nth-child(9) {
+.sorting-item__function {
+  margin-right: 47px;
+}
+.drill-item:nth-child(4),
+.drill-item:nth-child(7),
+.drill-item:nth-child(10) {
   margin-right: 0;
 }
 
@@ -929,7 +992,7 @@ header {
 
 .about-drills {
   display: block;
-  height: 261px;
+  height: 210px;
   width: 100%;
   background-color: #f2f6f8
 }
@@ -2098,6 +2161,7 @@ footer {
   line-height: 24px;
   margin: 0;
 }
+
 .footer-nav__category {
   margin-left: 30px;
 }
@@ -2151,14 +2215,18 @@ footer {
 .category-link__special {
   padding-left: 53px;
 }
+
 .list-item__map:hover,
 .list-item__category:hover {
   text-decoration: underline;
 }
+
 .list-item__map:active,
 .list-item__category:active {
   color: #8d949c;
 }
+
+
 /*footer-bottom*/
 
 .footer-bottom {
