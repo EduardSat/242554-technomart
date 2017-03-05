@@ -506,7 +506,13 @@ header {
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
-  margin-bottom: 23px;
+  margin-bottom: 111px;
+}
+
+.catalog-main__section {
+  display: flex;
+  width: 940px;
+  margin-bottom: 20px;
 }
 
 
@@ -631,6 +637,7 @@ header {
   flex-direction: column;
   width: 220px;
   height: 692px;
+  margin-right: 20px;
 }
 
 .filter-form__title {
@@ -804,6 +811,112 @@ header {
 
 
 /*filter-form ends*/
+
+
+/*catalog-items__Section*/
+
+.catalog-items__section {
+  display: flex;
+  width: 700px;
+  flex-wrap: wrap;
+  margin-top: 58px;
+}
+
+.drill-item:nth-child(6),
+.drill-item:nth-child(3),
+.drill-item:nth-child(9) {
+  margin-right: 0;
+}
+
+.paginator {
+  display: flex;
+  width: 300px;
+  margin-top: 29px;
+}
+
+.paginator__button {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  margin-right: 10px;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-left: 16px;
+}
+
+.curent-button {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #e5e5e5;
+  margin-right: 10px;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-left: 16px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.next-button {
+  width: 140px;
+  height: 38px;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+.paginator__button,
+.next-button {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.paginator__button:hover,
+.next-button:hover {
+  border: 1px solid #fc3240;
+}
+
+.about-drills {
+  display: block;
+  height: 261px;
+  width: 100%;
+  background-color: #f2f6f8
+}
+
+.about-drills__wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #000000;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.about-drills__title {
+  display: block;
+  font-family: Cuprum;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+
+.about-drills__text {
+  display: block;
+  padding-top: 20px;
+  font-family: "PT Sans";
+font-size: 13px;
+width: 938px;
+}
+
+
+/*catalog-items__Section ends*/
 
 
 /*catalog page ends*/
@@ -1184,7 +1297,7 @@ header {
 
 /*drill-actions__hover ends*/
 
-.drill-item:hover .drill__actions {
+.drill-item:hover {
   border-color: #ffffff;
   box-shadow: 4px 5px 33px -5px #000000;
 }
