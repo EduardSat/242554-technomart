@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -10,7 +10,7 @@
 </head>
 
 <body>
- <header>
+  <header>
     <div class="header-top">
       <div class="header-top__container">
         <div class="logo">
@@ -81,30 +81,144 @@
     </div>
   </header>
   <div class="main-wrapper">
-  <div class="breadcrumbs">
+    <div class="breadcrumbs">
       <ul class="main-nav">
-          <li class="nav-item__home">
-              <a href="" class="main-nav__home"></a>
-          </li>
-          <li class="main-nav__item">
-              <a href="" class="main-nav__link main-nav__catalog">каталог</a>
-          </li>
-          <li class="main-nav__item nav-item__instruments">
-              <a href="" class="main-nav__link main-nav__instruments">инструмент</a>
-          </li>
-          <li class="main-nav__item nav-item__drills">
-              <a href="" class="main-nav__link main-nav__drills">перфораторы</a>
-          </li>
+        <li class="nav-item__home">
+          <a href="" class="main-nav__home"></a>
+        </li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link main-nav__catalog">каталог</a>
+        </li>
+        <li class="main-nav__item nav-item__instruments">
+          <a href="" class="main-nav__link main-nav__instruments">инструмент</a>
+        </li>
+        <li class="main-nav__item nav-item__drills">
+          <a href="" class="main-nav__link main-nav__drills">перфораторы</a>
+        </li>
       </ul>
-  </div>
-  <div class="drills-page__title">
+    </div>
+    <div class="drills-page__title">
       <h2>перфораторы</h2>
-  </div>
-  <form action="" class="filter-form">
+    </div>
+    <form action="" class="filter-form">
       <div class="filter-form__title">
-          <span class="filter-title">фильтр:</span>
+        <span class="filter-title">фильтр:</span>
       </div>
-  </form>
+      <div class="filter-price-toggle">
+        <span class="filter-title__price">цена:</span>
+        <div class="range__controls">
+
+        </div>
+        <div class="price-controls">
+          <label class="min-price" for="min-price">
+          <input id="min-price" type="text" value="0">
+           </label>
+          <label class="max-price" for="max-price">
+          <input id="max-price" type="text" value="30000">
+           </label>
+        </div>
+      </div>
+      <div class="filter-developers">
+        <span class="filter-developers__title">производители:</span>
+        <ul class="developers-list">
+          <li class="developers__name">
+            <input class="developers__input" type="checkbox" id="Bosch" name="developers">
+            <label class="developers__label" for="Bosch">bosch</label>
+          </li>
+          <li class="developers__name">
+            <input class="developers__input" type="checkbox" id="interscol" name="developers" >
+            <label class="developers__label" for="interscol">интерскол</label>
+          </li>
+          <li class="developers__name">
+            <input class="developers__input" type="checkbox" id="makita" name="developers">
+            <label class="developers__label" for="makita">makita</label>
+          </li>
+          <li class="developers__name">
+            <input class="developers__input" type="checkbox" id="dewalt" name="developers" >
+            <label class="developers__label" for="dewalt">dewalt</label>
+          </li>
+          <li class="developers__name">
+            <input class="developers__input" type="checkbox" id="hitachi" name="developers" >
+            <label class="developers__label" for="hitachi">hitachi</label>
+          </li>
+        </ul>
+      </div>
+      <div class="filter-supply">
+        <span class="filter-supply__title">питание:</span>
+      </div>
+    </form>
   </div>
+  <footer>
+    <div class="footer-wrapper">
+      <div class="footer-top">
+        <div class="footer-top__left">
+          <div class="footer-logo">
+            <a class="logo-button" href="#">техномарт</a>
+          </div>
+          <div class="footer-contacts">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55
+          </div>
+        </div>
+        <div class="footer-top__right">
+          <nav class="footer-nav">
+            <ul class="footer-nav__list footer-list__map">
+              <li class="list-item__map">
+                <a class="item-map__link map-link__company" href="">компания</a>
+              </li>
+              <li class="list-item__map">
+                <a class="item-map__link map-link__news" href="">новости</a>
+              </li>
+              <li class="list-item__map">
+                <a class="item-map__link map-link__catalog" href="">каталог </a>
+              </li>
+              <li class="list-item__map">
+                <a class="item-map__link map-link__delivery" href="">Доставка</a>
+              </li>
+              <li class="list-item__map">
+                <a class="item-map__link map-link__contacts" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="footer-nav footer-nav__category">
+            <ul class="footer-nav__list footer-list__category">
+              <li class="list-item__category">
+                <a href="" class="item-category__link category-link__materials">материалы</a>
+              </li>
+              <li class="list-item__category">
+                <a href="" class="item-category__link category-link__equipment">техника</a>
+              </li>
+              <li class="list-item__category">
+                <a href="" class="item-category__link category-link__instruments">инструмент</a>
+              </li>
+              <li class="list-item__category">
+                <a href="" class="item-category__link category-link__special">спецпредложения</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom__container">
+          <div class="footer-copyright">
+            <p>© 2010–2017 Компания «Техномарт» Все права защищены</p>
+          </div>
+          <div class="footer-social">
+            <a class="social-btn social-vk" href="#"></a>
+            <a class="social-btn social-fb" href="#"></a>
+            <a class="social-btn social-insta" href="#"></a>
+          </div>
+          <div class="footer-communication">
+            Обратная связь:
+            <a class="mail-to" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="footer-developed">
+            Разработано —
+            <a class="developed-by"> htmlacademy.ru</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
