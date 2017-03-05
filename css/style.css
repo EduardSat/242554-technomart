@@ -819,7 +819,53 @@ header {
   display: flex;
   width: 700px;
   flex-wrap: wrap;
-  margin-top: 58px;
+}
+
+.drill-sorting {
+  display: flex;
+  width: 700px;
+  height: 38px;
+  background-color: #f7f3ec;
+  margin-bottom: 18px;
+}
+
+.drill-sorting__title {
+  padding-left: 19px;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-right: 139px;
+  padding-top: 9px;
+}
+
+.drill-sorting__list {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.drill-sorting__link {
+  text-decoration: none;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.price-link {
+  color: #ee3643;
+}
+.sorting-item__price {
+  padding-top: 9px;
+  width: 80px;
+}
+
+.sorting-item__type,
+.sorting-item__function {
+  padding-top: 9px;
+  width: 140px;
 }
 
 .drill-item:nth-child(6),
@@ -909,10 +955,10 @@ header {
 
 .about-drills__text {
   display: block;
-  padding-top: 20px;
+  padding-top: 31px;
   font-family: "PT Sans";
-font-size: 13px;
-width: 938px;
+  font-size: 13px;
+  width: 938px;
 }
 
 
@@ -1272,34 +1318,87 @@ width: 938px;
 
 /*drill-actions__hover*/
 
-
-/*.drill__actions {
-  display: none;
-  content: "";
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 218px;
-  height: 88px;
-}
 .actions-buy,
 .actions-bookmarks {
- width: 135px;
+  display: none;
+  width: 135px;
+  text-decoration: none;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
 }
+
 .actions-buy {
-  background-color: #27a831;
-  padding-top: 5px;
-  padding-left: 20px;
-}*/
+  padding-top: 10px;
+  padding-left: 49px;
+  margin-top: 37px;
+  width: 135px;
+  height: 38px;
+  box-shadow: inset 0 -3px 0 #367315;
+  background-color: #63a63e;
+  color: #ffffff;
+  position: relative;
+}
+
+.actions-buy::after {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 16px;
+  background: url(../img/basket-icon.png);
+  background-repeat: no-repeat;
+  left: 10px;
+}
+
+.actions-bookmarks {
+  width: 135px;
+  height: 38px;
+  border: 3px solid #63a63e;
+  margin-top: 8px;
+  margin-bottom: 55px;
+  padding-top: 10px;
+  padding-left: 36px;
+  color: #32425c;
+}
 
 
 /*drill-actions__hover ends*/
 
-.drill-item:hover {
+.drill-item:hover,
+.drill-bfg__6000:hover {
   border-color: #ffffff;
   box-shadow: 4px 5px 33px -5px #000000;
+}
+
+.drill-item:hover .actions-buy,
+.drill-item:hover .actions-bookmarks {
+  display: block;
+}
+
+.drill-bfg__6000:hover .actions-buy,
+.drill-bfg__6000:hover .actions-bookmarks {
+  display: block;
+}
+
+.drill-item:hover .drill-img,
+.drill-bfg__6000:hover .drill-img {
+  display: none;
+}
+
+.drill-bfg__6000 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 318px;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  margin-right: 20px;
+  align-items: center;
+  margin-bottom: 21px;
+  margin-right: 20px;
 }
 
 .drill-item:last-child {
@@ -1985,6 +2084,7 @@ footer {
 
 .footer-nav {
   width: 556px;
+  margin-bottom: 34px;
 }
 
 .footer-nav__list {
@@ -1998,12 +2098,6 @@ footer {
   line-height: 24px;
   margin: 0;
 }
-
-.footer-list__map {
-  width: 556px;
-  margin-bottom: 34px;
-}
-
 .footer-nav__category {
   margin-left: 30px;
 }
@@ -2057,8 +2151,14 @@ footer {
 .category-link__special {
   padding-left: 53px;
 }
-
-
+.list-item__map:hover,
+.list-item__category:hover {
+  text-decoration: underline;
+}
+.list-item__map:active,
+.list-item__category:active {
+  color: #8d949c;
+}
 /*footer-bottom*/
 
 .footer-bottom {
