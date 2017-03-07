@@ -50,9 +50,14 @@
           <div class="contacts__phone">+7 (812) 555-05-55</div>
           <div class="contacts__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
         </div>
-        <div class="auth">
-          <a class="enter" href="#">Войти</a>
-          <a class="log-in" href="#">Регистрация</a>
+        <div class="auth__catalog">
+          <!--<a class="enter" href="#">Войти</a>
+          <a class="log-in" href="#">Регистрация</a>-->
+          <a class="auth-log__in">равшан джамшутович</a>
+          <div class="log-in__functions">
+          <a class="auth-order">мои заказы</a>
+          <a class="auth-personal__account">личный кабинет</a>
+          </div>
         </div>
       </div>
       <nav class="navigation">
@@ -127,7 +132,7 @@
           <span class="filter-developers__title">производители:</span>
           <ul class="developers-list">
             <li class="developers__name">
-              <input class="developers__input" type="checkbox" id="Bosch" name="developers">
+              <input class="developers__input" type="checkbox" id="Bosch" name="developers" checked>
               <label class="developers__label" for="Bosch">bosch</label>
             </li>
             <li class="developers__name">
@@ -135,7 +140,7 @@
               <label class="developers__label" for="interscol">интерскол</label>
             </li>
             <li class="developers__name">
-              <input class="developers__input" type="checkbox" id="makita" name="developers">
+              <input class="developers__input" type="checkbox" id="makita" name="developers" checked>
               <label class="developers__label" for="makita">makita</label>
             </li>
             <li class="developers__name">
@@ -151,8 +156,8 @@
         <div class="filter-supply">
           <span class="filter-supply__title">питание:</span>
           <ul class="supply-list">
-          <li class="supply-item">
-            <input class="supply-input" type="radio" id="accum" name="supply">
+          <li class="supply-item supply-input__accum">
+            <input class="supply-input" type="radio" id="accum" name="supply" checked>
             <label class="supply-label" for="accum">аккумуляторные</label>
           </li>
           <li class="supply-item">
@@ -173,7 +178,7 @@
               <a href="#" class="drill-sorting__link type-link">по типу</a>
             </li>
             <li class="drill-sorting__item sorting-item__function">
-              <a href="#" class="drill-sorting__link">по функционалу</a>
+              <a href="#" class="drill-sorting__link function-link">по функционалу</a>
             </li>
           </ul>
           <div class="drill-sorting__controls">

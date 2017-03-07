@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/fonts.css" type="text/css">
   <link rel="stylesheet" href="css/normalize.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script type="text/javascript" src="technomart.js"></script>
 </head>
 
 <body>
@@ -130,15 +131,15 @@
       <div class="popular-items__bottom">
         <div class="drill-item">
           <a href="#" class="actions-buy">купить</a>
-          <a href="#" class="actions-bookmarks">в закладки</a>   
-          <img class="drill-img img__bfg-9000" src="img/drill-long.jpg" width="184" height="164" alt="drill">    
+          <a href="#" class="actions-bookmarks">в закладки</a>
+          <img class="drill-img img__bfg-9000" src="img/drill-long.jpg" width="184" height="164" alt="drill">
           <span class="drill-title"><span>перфоратор</span> bosch bfg 9000</span>
           <span class="drill-price__old">32500 Р.</span>
           <a class="drill-btn" href="#">25500 Р.</a>
         </div>
         <div class="drill-item">
           <a href="#" class="actions-buy">купить</a>
-          <a href="#" class="actions-bookmarks">в закладки</a>   
+          <a href="#" class="actions-bookmarks">в закладки</a>
           <img class="drill-img img__bfg-3000" src="img/drill-type2.jpg" width="127" height="112" alt="drill">
           <span class="drill-title"><span>перфоратор</span> bosch bfg 3000</span>
           <span class="drill-price__old">22500 Р.</span>
@@ -146,7 +147,7 @@
         </div>
         <div class="drill-bfg__6000">
           <a href="#" class="actions-buy">купить</a>
-          <a href="#" class="actions-bookmarks">в закладки</a>   
+          <a href="#" class="actions-bookmarks">в закладки</a>
           <img class="drill-img img__bfg-6000" src="img/drill-type1.jpg" width="144" height="128" alt="drill">
           <span class="drill-title"><span>перфоратор</span> bosch bfg 6000</span>
           <span class="drill-price__old">30500 Р.</span>
@@ -154,7 +155,7 @@
         </div>
         <div class="drill-item">
           <a href="#" class="actions-buy">купить</a>
-          <a href="#" class="actions-bookmarks">в закладки</a>   
+          <a href="#" class="actions-bookmarks">в закладки</a>
           <img class="drill-img img__bfg-2000" src="img/drill-type2.jpg" width="127" height="112" alt="drill">
           <span class="drill-title drill-title__2000"><span>перфоратор</span> bosch bfg 2000</span>
           <a class="drill-btn" href="#">12500 Р.</a>
@@ -220,7 +221,7 @@
           <div class="services-slider__guarantee services-slider__popup">
             <div class="services-slider__text">
               <span class="slider-text__title">гарантия</span>
-              <span class="slider-text">
+              <span class="slider-text quarantee-text">
                   Если купленный у нас товар поломается или заискрит,<br>
                   а также в случае пожара, спровоцированного его возгаранием,<br>
                   вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> 
@@ -270,80 +271,93 @@
           <img src="img/index-map.jpg" width="300" height="158" alt="mini-map">
         </a>
         <a href="#" class="companies-contacts__btn">заблудились? напишите нам</a>
+         <form class="contacts-if__loose">
+        <button class="if-loose__close"></button>
+        <span class="client-name">ваше имя:</span>
+        <label class="if-loose__label" for="your-name">представтесь, пожалуйста</label>
+        <input class="if-loose__input" id="your-name" name="clients-name">
+        <span class="client-email">ваш e-mail:</span>
+        <label class="if-loose__label" for="your-email">для отправки ответа</label>
+        <input class="if-loose__input" id="your-email" name="clients-email">
+        <span class="client-letter">текст письма:</span>
+        <label class="if-loose__label" for="your-letter">в свободной форме</label>
+        <input class="if-loose__input" id="your-letter" name="clients-letter">
+        <a href="#" class="if-loose__btn">отправить</a>
+      </form>
       </div>
     </section>
-  <footer>
-    <div class="footer-wrapper">
-      <div class="footer-top">
-        <div class="footer-top__left">
-          <div class="footer-logo">
-            <a class="logo-button" href="#">техномарт</a>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-top">
+          <div class="footer-top__left">
+            <div class="footer-logo">
+              <a class="logo-button" href="#">техномарт</a>
+            </div>
+            <div class="footer-contacts">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55
+            </div>
           </div>
-          <div class="footer-contacts">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55
+          <div class="footer-top__right">
+            <nav class="footer-nav">
+              <ul class="footer-nav__list footer-list__map">
+                <li class="list-item__map">
+                  <a class="item-map__link map-link__company" href="">компания</a>
+                </li>
+                <li class="list-item__map">
+                  <a class="item-map__link map-link__news" href="">новости</a>
+                </li>
+                <li class="list-item__map">
+                  <a class="item-map__link map-link__catalog" href="">каталог </a>
+                </li>
+                <li class="list-item__map">
+                  <a class="item-map__link map-link__delivery" href="">Доставка</a>
+                </li>
+                <li class="list-item__map">
+                  <a class="item-map__link map-link__contacts" href="">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="footer-nav footer-nav__category">
+              <ul class="footer-nav__list footer-list__category">
+                <li class="list-item__category">
+                  <a href="" class="item-category__link category-link__materials">материалы</a>
+                </li>
+                <li class="list-item__category">
+                  <a href="" class="item-category__link category-link__equipment">техника</a>
+                </li>
+                <li class="list-item__category">
+                  <a href="" class="item-category__link category-link__instruments">инструмент</a>
+                </li>
+                <li class="list-item__category">
+                  <a href="" class="item-category__link category-link__special">спецпредложения</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
-        <div class="footer-top__right">
-          <nav class="footer-nav">
-            <ul class="footer-nav__list footer-list__map">
-              <li class="list-item__map">
-                <a class="item-map__link map-link__company" href="">компания</a>
-              </li>
-              <li class="list-item__map">
-                <a class="item-map__link map-link__news" href="">новости</a>
-              </li>
-              <li class="list-item__map">
-                <a class="item-map__link map-link__catalog" href="">каталог </a>
-              </li>
-              <li class="list-item__map">
-                <a class="item-map__link map-link__delivery" href="">Доставка</a>
-              </li>
-              <li class="list-item__map">
-                <a class="item-map__link map-link__contacts" href="">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <nav class="footer-nav footer-nav__category">
-            <ul class="footer-nav__list footer-list__category">
-              <li class="list-item__category">
-                <a href="" class="item-category__link category-link__materials">материалы</a>
-              </li>
-              <li class="list-item__category">
-                <a href="" class="item-category__link category-link__equipment">техника</a>
-              </li>
-              <li class="list-item__category">
-                <a href="" class="item-category__link category-link__instruments">инструмент</a>
-              </li>
-              <li class="list-item__category">
-                <a href="" class="item-category__link category-link__special">спецпредложения</a>
-              </li>
-            </ul>
-          </nav>
+        <div class="footer-bottom">
+          <div class="footer-bottom__container">
+            <div class="footer-copyright">
+              <p>© 2010–2017 Компания «Техномарт» Все права защищены</p>
+            </div>
+            <div class="footer-social">
+              <a class="social-btn social-vk" href="#"></a>
+              <a class="social-btn social-fb" href="#"></a>
+              <a class="social-btn social-insta" href="#"></a>
+            </div>
+            <div class="footer-communication">
+              Обратная связь:
+              <a class="mail-to" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="footer-developed">
+              Разработано —
+              <a class="developed-by"> htmlacademy.ru</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div class="footer-bottom__container">
-          <div class="footer-copyright">
-            <p>© 2010–2017 Компания «Техномарт» Все права защищены</p>
-          </div>
-          <div class="footer-social">
-            <a class="social-btn social-vk" href="#"></a>
-            <a class="social-btn social-fb" href="#"></a>
-            <a class="social-btn social-insta" href="#"></a>
-          </div>
-          <div class="footer-communication">
-            Обратная связь:
-            <a class="mail-to" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
-          <div class="footer-developed">
-            Разработано —
-            <a class="developed-by"> htmlacademy.ru</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!--<div class="modal-content">
+    </footer>
+    <!--<div class="modal-content">
   <div class="modal-content-map">
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="766" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -373,4 +387,5 @@
       });
     </script>-->
 </body>
+
 </html>

@@ -351,6 +351,13 @@ header {
   margin-bottom: 8px;
 }
 
+.auth__catalog {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  width: 300px;
+}
+
 .enter,
 .log-in {
   height: 45px;
@@ -377,7 +384,8 @@ header {
 .enter {
   position: relative;
   width: 121px;
-  margin-right: 10px;
+  margin-right: 29px;
+  margin-left: 19px;
   padding-top: 14px;
   padding-left: 48px;
 }
@@ -402,6 +410,75 @@ header {
 .enter:active,
 .log-in:active {
   color: #c5c5c5;
+}
+
+.auth-log__in {
+  display: block;
+  background-color: #ffffff;
+  width: 299px;
+  height: 45px;
+  margin-left: 14px;
+  text-transform: capitalize;
+  padding-top: 15px;
+  padding-left: 46px;
+  color: #000000;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 18px;
+  position: relative;
+}
+
+.auth-log__in::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 18px;
+  background: url(../img/user-icon.png);
+  background-repeat: no-repeat;
+  left: 13px;
+}
+
+.auth-log__in::after {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 17px;
+  background: url(../img/log-out__icon.png);
+  background-repeat: no-repeat;
+  right: 10px;
+  top: 16px;
+}
+
+.log-in__functions {
+  margin-top: 10px;
+  display: flex;
+  width: 210px;
+  height: 14px;
+  color: #32425c;
+  font-family: Cuprum;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: underline;
+  text-transform: capitalize;
+  justify-content: space-between;
+  margin-left: 31px;
+}
+
+.auth-order {
+  position: relative;
+}
+
+.auth-order::after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 3px;
+  background-color: #32425c;
+  border-radius: 3px;
+  top: 7px;
+  left: 90px;
 }
 
 
@@ -819,6 +896,15 @@ header {
   background-repeat: no-repeat;
 }
 
+.developers__input:checked {
+  position: absolute;
+  content: "";
+  width: 27px;
+  height: 23px;
+  background: url(../img/check-on_icon.png);
+  background-repeat: no-repeat;
+}
+
 
 /*filter developers ends*/
 
@@ -829,10 +915,28 @@ header {
   display: flex;
   flex-direction: column;
   width: 220px;
-  height: 160px;
 }
+
 .supply-list {
   list-style-type: none;
+  padding-left: 0;
+}
+
+.supply-item {
+  position: relative;
+}
+
+.supply-input {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  content: "";
+  background: url(../img/circle-icon.png);
+  background-repeat: no-repeat;
+}
+
+.supply-input__accum {
+  margin-bottom: 15px;
 }
 
 
@@ -865,8 +969,9 @@ header {
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
-  padding-right: 139px;
+  padding-right: 132px;
   padding-top: 9px;
+  text-transform: uppercase;
 }
 
 .drill-sorting__list {
@@ -891,6 +996,7 @@ header {
   top: 12px;
   left: 1px;
 }
+
 .sorting-controls__down {
   position: absolute;
   content: "";
@@ -901,12 +1007,14 @@ header {
   right: 16px;
   top: 12px;
 }
+
 .drill-sorting__link {
   text-decoration: none;
   font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
+  text-transform: uppercase;
 }
 
 .drill-sorting__link {
@@ -919,18 +1027,21 @@ header {
 }
 
 .sorting-item__price {
-  padding-top: 9px;
+  padding-top: 7px;
   width: 80px;
 }
 
 .sorting-item__type,
 .sorting-item__function {
-  padding-top: 9px;
+  padding-top: 6px;
+  text-align: center;
   width: 140px;
 }
+
 .sorting-item__function {
   margin-right: 47px;
 }
+
 .drill-item:nth-child(4),
 .drill-item:nth-child(7),
 .drill-item:nth-child(10) {
@@ -1816,8 +1927,6 @@ header {
   padding-left: 80px;
   font-weight: 400;
   line-height: 24px;
-  height: 172px;
-  width: 379px;
 }
 
 .slider-text__title {
@@ -1827,6 +1936,7 @@ header {
   font-family: Cuprum;
   font-size: 36px;
   text-transform: uppercase;
+  padding-top: 10px;
 }
 
 .slider-text {
@@ -1872,6 +1982,7 @@ header {
   margin: 0 auto;
   width: 940px;
   margin-bottom: 86px;
+  position: relative;
 }
 
 .about-companies__text {
@@ -1994,6 +2105,17 @@ header {
   padding-top: 11px;
   padding-left: 65px;
   border-radius: 3px;
+}
+
+.contacts-if__loose {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 620px;
+  height: 430px;
+  left: 172px;
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
 
 
