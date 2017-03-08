@@ -9,4 +9,5 @@ link.addEventListener("click", function (event) {
 close.addEventListener("click", function (event) {
       event.preventDefault();
       popup.classList.remove("contacts-if__loose"); 
-      });
+    });
+    
