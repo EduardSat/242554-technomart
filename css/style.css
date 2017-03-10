@@ -3,7 +3,7 @@
 /* CSS Document */
 
 body {
-  font-family: "Pt Sans";
+  font-family: Pt Sans;
 }
 
 * {
@@ -38,7 +38,6 @@ header {
 }
 
 .header-top {
-  font-family: Cuprum;
   height: 42px;
   background-color: #293449;
   display: flex;
@@ -98,9 +97,9 @@ header {
   width: 17px;
   height: 17px;
   position: absolute;
+  content: "";
   background: url(../img/search-icon.png);
   background-repeat: no-repeat;
-  border: none;
 }
 
 .search__input {
@@ -137,7 +136,6 @@ header {
 
 .search:hover,
 .search:hover .search__label {
-  background-color: #212a3a;
   color: #ffffff;
 }
 
@@ -146,14 +144,13 @@ header {
   background-color: #ffffff;
 }
 
-.search__input:focus {
-}
-
-.search__input:focus+.search__label {
+.search__label:focus {
+  height: 27px;
+  width: 21px;
   background: url(../img/search-icon__active.png);
- background-repeat: no-repeat;
- height: 27px;
- width: 21px;
+  background-repeat: no-repeat;
+  height: 27px;
+  width: 21px;
 }
 
 
@@ -508,45 +505,9 @@ header {
 
 .nav-item {
   padding-top: 20px;
-  width: 137px;
+  width: 126px;
   text-align: center;
   padding-right: 29px;
-}
-
-.nav-link__main {
-  padding-left: 51px;
-}
-
-.nav-link__company {
-  padding-left: 29px;
-}
-
-.nav-link__catalog {
-  padding-left: 24px;
-}
-
-.nav-item__news {
-  width: 100px;
-}
-
-.nav-link__news {
-  padding-left: 20px;
-}
-
-.nav-link__special {
-  padding-left: 10px;
-}
-
-.nav-link__delivery {
-  padding-left: 14px;
-}
-
-.nav-link__contacts {
-  padding-right: 6px;
-}
-
-.nav-item__special {
-  width: 169px;
 }
 
 .nav-link {
@@ -557,6 +518,10 @@ header {
   line-height: 17px;
   text-decoration: none;
   list-style-type: none;
+}
+
+.nav-item__special {
+  flex-grow: 1;
 }
 
 .nav-item:hover {
@@ -649,7 +614,7 @@ header {
 .main-nav__link {
   text-decoration: none;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: Pt Sans;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -715,7 +680,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 220px;
-  height: 692px;
+  min-height: 692px;
   margin-right: 20px;
 }
 
@@ -732,11 +697,35 @@ header {
   padding-top: 11px;
   padding-left: 19px;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: Pt Sans;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.form-btn {
+  width: 140px;
+  height: 38px;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 9px;
+  text-transform: uppercase;
+}
+
+.form-btn:hover {
+  background-color: #cdcdcd;
+}
+
+.form-btn:active {
+  background-color: #b3b3b3;
 }
 
 
@@ -755,7 +744,7 @@ header {
 .filter-title__price {
   width: 51px;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: Pt Sans;
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
@@ -771,15 +760,26 @@ header {
   position: relative;
 }
 
+.range__toggle {
+  width: 152px;
+  height: 2px;
+  position: absolute;
+  content: "";
+  top: 43px;
+  left: 29px;
+}
+
+/*
 .price-bar {
   width: 171px;
   height: 2px;
   background-color: #00ca74;
   margin-top: 37px;
   margin-left: 29px;
-}
+}*/
 
-.range-controls__left {
+
+/*.range-controls__left {
   position: absolute;
   content: "";
   width: 20px;
@@ -801,7 +801,7 @@ header {
   border-radius: 50%;
   top: 28px;
   right: 25px;
-}
+}*/
 
 .price-controls {
   display: flex;
@@ -851,7 +851,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 220px;
-  height: 247px;
+  min-height: 247px;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 17px;
 }
@@ -860,7 +860,7 @@ header {
 .filter-supply__title {
   width: 141px;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: Pt Sans;
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
@@ -881,7 +881,7 @@ header {
 .developers__label,
 .supply-label {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: Pt Sans;
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
@@ -889,16 +889,24 @@ header {
   padding-left: 34px;
 }
 
-.developers__input {
+.developers__input,
+.developers__input:checked,
+.supply-input,
+.supply-input:checked {
+  display: none;
+}
+
+.developers__label::before {
   position: absolute;
   content: "";
   width: 23px;
   height: 23px;
   background: url(../img/check-off_icon.png);
   background-repeat: no-repeat;
+  left: 3px;
 }
 
-.developers__input:checked {
+.developers__input:checked+.developers__label::before {
   position: absolute;
   content: "";
   width: 27px;
@@ -916,29 +924,39 @@ header {
 .filter-supply {
   display: flex;
   flex-direction: column;
-  width: 220px;
+  min-width: 220px;
+  min-height: 160px;
 }
 
 .supply-list {
   list-style-type: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .supply-item {
   position: relative;
+  height: 26px;
+  margin-bottom: 15px;
 }
 
-.supply-input {
+.supply-label::before {
   position: absolute;
   width: 25px;
   height: 25px;
   content: "";
   background: url(../img/circle-icon.png);
   background-repeat: no-repeat;
+  left: 1px;
 }
 
-.supply-input__accum {
-  margin-bottom: 15px;
+.supply-input:checked+.supply-label::before {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  content: "";
+  background: url(../img/circle-icon_dot.png);
+  background-repeat: no-repeat;
 }
 
 
@@ -959,8 +977,9 @@ header {
 
 .drill-sorting {
   display: flex;
+  flex-wrap: wrap;
   width: 700px;
-  height: 38px;
+  min-height: 38px;
   background-color: #f7f3ec;
   margin-bottom: 18px;
 }
@@ -968,7 +987,7 @@ header {
 .drill-sorting__title {
   padding-left: 19px;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: Pt Sans;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -1013,7 +1032,7 @@ header {
 
 .drill-sorting__link {
   text-decoration: none;
-  font-family: "PT Sans";
+  font-family: Pt Sans;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -1093,7 +1112,7 @@ header {
 .paginator__button,
 .next-button {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: Pt Sans;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -1133,7 +1152,7 @@ header {
 .about-drills__text {
   display: block;
   padding-top: 31px;
-  font-family: "PT Sans";
+  font-family: Pt Sans;
   font-size: 13px;
   width: 938px;
 }
@@ -1312,6 +1331,10 @@ header {
   background-repeat: no-repeat;
 }
 
+.category-gallery__hiden {
+  display: none;
+}
+
 .category-gallery-title {
   display: flex;
   flex-direction: column;
@@ -1334,7 +1357,7 @@ header {
   padding-left: 25px;
   padding-top: 3px;
   color: #ffffff;
-  font-family: "PT Sans";
+  font-family: Pt Sans;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -1633,7 +1656,7 @@ header {
 .drill-title {
   width: 158px;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: Pt Sans;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -1654,7 +1677,7 @@ header {
 .drill-price__old {
   width: 67px;
   color: #999999;
-  font-family: "PT Sans";
+  font-family: Pt Sans;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -1674,7 +1697,7 @@ header {
   height: 38px;
   background-color: #ee3643;
   color: #ffffff;
-  font-family: "PT Sans";
+  font-family: Pt Sans;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -1721,7 +1744,7 @@ header {
 .popular-manuf {
   margin: 0 auto;
   width: 940px;
-  margin-bottom: 85px;
+  margin-bottom: 65px;
 }
 
 .popular-manuf__top {
@@ -1829,7 +1852,7 @@ header {
   width: 100%;
   min-height: 522px;
   background-color: #f2f6f8;
-  margin-bottom: 62px;
+  margin-bottom: 77px;
 }
 
 .services-wrapper {
@@ -1860,7 +1883,7 @@ header {
 }
 
 .services-about__text {
-  font-family: "PT Sans";
+  font-family: Pt Sans, sans-serif;
   font-size: 13px;
 }
 
@@ -1908,6 +1931,7 @@ header {
 
 .options-select__label:hover {
   background-color: #1d3247;
+  transition: 1s;
 }
 
 .options-input__delivery:checked~.select__delivery,
@@ -1915,6 +1939,7 @@ header {
 .options-input__credit:checked~.select__credit {
   background-color: #ffffff;
   color: #243f5a;
+  transition: 1.5s;
 }
 
 .options-input__delivery:checked~.services-slider__delivery {
@@ -1972,7 +1997,7 @@ header {
 
 .slider-text {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: Pt Sans;
   font-size: 13px;
 }
 
@@ -2034,7 +2059,7 @@ header {
 }
 
 .about-text {
-  font-family: "PT Sans";
+  font-family: Pt Sans;
   font-size: 13px;
   line-height: 24px;
 }
@@ -2113,7 +2138,7 @@ header {
 }
 
 .companies-contacts__text {
-  font-family: "PT Sans";
+  font-family: Pt Sans;
   font-size: 13px;
   margin-bottom: 31px;
 }

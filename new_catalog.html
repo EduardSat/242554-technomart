@@ -115,17 +115,15 @@
         <div class="filter-price-toggle">
           <span class="filter-title__price">цена:</span>
           <div class="range__controls">
-            <div class="price-bar"></div>
-            <div class="range-controls__left"></div>
-            <div class="range-controls__right"></div>
+            <!--<div class="price-bar"></div>-->
+            <input class="range__toggle" output="min.value=(ran.value); max.value=(ran.value)" id="ran" type="range" min="0" max="30 000" multiple>
+            <label for="ran"></label>
           </div>
           <div class="price-controls">
-            <label class="min-price" for="min-price">
-          <input id="min-price" type="text" value="0">
-           </label>
-            <label class="max-price" for="max-price">
-          <input id="max-price" type="text" value="30000">
-           </label>
+            <label class="min-price" for="min-price"></label>
+          <output class="min-out" id="min">0</output>
+            <label class="max-price" for="max-price"></label>
+          <output class="max-out" id="max">30000</output>
           </div>
         </div>
         <div class="filter-developers">
@@ -156,7 +154,7 @@
         <div class="filter-supply">
           <span class="filter-supply__title">питание:</span>
           <ul class="supply-list">
-          <li class="supply-item supply-input__accum">
+          <li class="supply-item">
             <input class="supply-input" type="radio" id="accum" name="supply" checked>
             <label class="supply-label" for="accum">аккумуляторные</label>
           </li>
@@ -166,6 +164,7 @@
           </li>
           </ul>
         </div>
+        <a href="#" class="form-btn">показать</a>
       </form>
       <div class="catalog-items__section">
         <div class="drill-sorting">
