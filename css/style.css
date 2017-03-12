@@ -87,7 +87,7 @@ header {
   width: 240px;
 }
 
-.search__label {
+  .search__label {
   top: 13px;
   left: 7px;
   width: 17px;
@@ -138,6 +138,7 @@ header {
 .search__input:focus,
 .search__input:focus+.search__label {
   background-color: #ffffff;
+  color: #030303;
 }
 
 .search__label:focus {
@@ -471,7 +472,7 @@ header {
   width: 4px;
   height: 3px;
   background-color: #32425c;
-  border-radius: 3px;
+  border-radius: 50%;
   top: 7px;
   left: 90px;
 }
@@ -1060,13 +1061,6 @@ header {
 .sorting-item__function {
   margin-right: 47px;
 }
-
-.drill-item:nth-child(4),
-.drill-item:nth-child(7),
-.drill-item:nth-child(10) {
-  margin-right: 0;
-}
-
 .paginator {
   display: flex;
   width: 300px;
@@ -1581,7 +1575,21 @@ header {
 .drill-item:last-child {
   margin-right: 0;
 }
-
+.index-img__type1 {
+  margin-bottom: 10px;
+  margin-top: 6px;
+  margin-right: 2px;
+}
+.index-img__type2 {
+  margin-bottom: 41px;
+  margin-top: 29px;
+  margin-right: 12px;
+}
+.index-img__type3 {
+  margin-bottom: 30px;
+  margin-top: 22px;
+  margin-right: 21px;
+}
 .img__bfg-3000 {
   margin-top: 29px;
   margin-right: 9px;
@@ -1654,7 +1662,6 @@ header {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 12px;
-  margin-left: 4px;
 }
 
 .drill-title__2000 {
@@ -1702,6 +1709,7 @@ header {
 
 .index-drill__btn {
   margin-left: 8px;
+  margin-bottom: 6px;
 }
 
 .drill-btn::after {
@@ -1792,20 +1800,21 @@ header {
 }
 
 .img__metabo {
-  margin-left: 7px;
+  margin-left: 5px;
   margin-bottom: 6px;
 }
 
 .img__interscol {
-  margin-bottom: 15px;
+  margin-bottom: 13px;
+  margin-right: 2px;
 }
 
 .img__makita {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .img__dewalt {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .img__lg {
@@ -1813,12 +1822,12 @@ header {
 }
 
 .img__hitachi {
-  margin-top: 2px;
+  margin-top: 3px;
   margin-left: 5px;
 }
 
 .img__aeg {
-  margin-left: 3px;
+  margin-left: 2px;
   margin-bottom: 2px;
 }
 
