@@ -2,34 +2,30 @@
 
 /* CSS Document */
 
+
+/*global styles*/
+
 body {
   font-family: ptsans;
 }
 
-* {
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
   box-sizing: border-box;
 }
 
-
-/*.main-content__wrapper {
-  position: relative;
-  min-height: 100%;
-  min-width: 970px;
+img {
+  max-width: 100%;
   height: auto;
 }
-.main-content__wrapper::after {
-  content: "";
-  height: 300px;
-  display: block;
-}
-.footer-bottom {
-  min-width: 970px;
-  height: 300px;
-  margin-top: -81px;
-}*/
 
 
-/*header begins*/
+/*global styles end*/
 
 header {
   display: flex;
