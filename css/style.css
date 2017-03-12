@@ -3,7 +3,7 @@
 /* CSS Document */
 
 body {
-  font-family: Pt Sans;
+  font-family: ptsans;
 }
 
 * {
@@ -64,7 +64,7 @@ header {
   margin-right: 10px;
   text-transform: uppercase;
   margin-bottom: -5px;
-  font-family: Cuprum;
+  font-family: cuprum;
 }
 
 .logo-btn {
@@ -73,7 +73,7 @@ header {
   font-weight: 700;
   align-self: center;
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: cuprum;
   text-decoration: none;
   padding-left: 56px;
 }
@@ -110,7 +110,7 @@ header {
   padding-left: 39px;
   border: 0 none;
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
@@ -202,7 +202,7 @@ header {
 .menu-link {
   position: relative;
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: cuprum;
   text-decoration: none;
   padding-top: 12px;
 }
@@ -235,7 +235,7 @@ header {
 
 .menu-link__text {
   padding-left: 25px;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
@@ -243,7 +243,7 @@ header {
 
 .text__basket {
   padding-left: 40px;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
@@ -252,7 +252,7 @@ header {
 .menu-order__text {
   padding-left: 20px;
   padding-right: 20px;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-weight: 400;
   line-height: 18px;
 }
@@ -283,7 +283,7 @@ header {
 .info-text {
   width: 200px;
   color: #ee3643;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
@@ -320,7 +320,7 @@ header {
   padding-left: 58px;
   border: 3px solid #ffffff;
   color: #ee3643;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 21px;
   font-weight: 400;
   line-height: 18px;
@@ -333,7 +333,7 @@ header {
   margin-right: 8px;
   text-align: center;
   color: #32425c;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -362,7 +362,7 @@ header {
   height: 45px;
   text-decoration: none;
   color: #000000;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 21px;
   font-weight: 400;
   line-height: 18px;
@@ -421,7 +421,7 @@ header {
   padding-top: 16px;
   padding-left: 48px;
   color: #000000;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 21px;
   font-weight: 400;
   line-height: 18px;
@@ -455,7 +455,7 @@ header {
   width: 210px;
   height: 14px;
   color: #32425c;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -512,7 +512,7 @@ header {
 
 .nav-link {
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 17px;
   font-weight: 400;
   line-height: 17px;
@@ -614,7 +614,7 @@ header {
 .main-nav__link {
   text-decoration: none;
   color: #000000;
-  font-family: Pt Sans;
+  font-family: ptsans;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -663,7 +663,7 @@ header {
 
 .drills-page__title h2 {
   color: #32425c;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -697,7 +697,7 @@ header {
   padding-top: 11px;
   padding-left: 19px;
   color: #000000;
-  font-family: Pt Sans;
+  font-family: ptsans;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -710,7 +710,7 @@ header {
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "ptsans";
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -744,7 +744,7 @@ header {
 .filter-title__price {
   width: 51px;
   color: #000000;
-  font-family: Pt Sans;
+  font-family: ptsans;
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
@@ -768,6 +768,7 @@ header {
   top: 43px;
   left: 29px;
 }
+
 
 /*
 .price-bar {
@@ -860,7 +861,7 @@ header {
 .filter-supply__title {
   width: 141px;
   color: #000000;
-  font-family: Pt Sans;
+  font-family: ptsans;
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
@@ -881,7 +882,7 @@ header {
 .developers__label,
 .supply-label {
   color: #000000;
-  font-family: Pt Sans;
+  font-family: ptsans;
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
@@ -987,7 +988,7 @@ header {
 .drill-sorting__title {
   padding-left: 19px;
   color: #000000;
-  font-family: Pt Sans;
+  font-family: ptsans;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -1032,7 +1033,7 @@ header {
 
 .drill-sorting__link {
   text-decoration: none;
-  font-family: Pt Sans;
+  font-family: ptsans;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -1112,7 +1113,7 @@ header {
 .paginator__button,
 .next-button {
   color: #000000;
-  font-family: Pt Sans;
+  font-family: ptsans;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -1143,7 +1144,7 @@ header {
 
 .about-drills__title {
   display: block;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 30px;
   text-transform: uppercase;
   padding-top: 15px;
@@ -1152,7 +1153,7 @@ header {
 .about-drills__text {
   display: block;
   padding-top: 31px;
-  font-family: Pt Sans;
+  font-family: ptsans;
   font-size: 13px;
   width: 938px;
 }
@@ -1196,7 +1197,7 @@ header {
 .category-text {
   align-self: flex-start;
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -1278,7 +1279,7 @@ header {
   height: 38px;
   text-decoration: none;
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1340,13 +1341,14 @@ header {
   flex-direction: column;
   width: 620px;
   height: 105px;
+  background-color: rgba(0, 0, 0, 0.17);
 }
 
 .gallery-title {
   padding-top: 26px;
   padding-left: 26px;
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 36px;
   font-weight: 700;
   line-height: 30px;
@@ -1357,7 +1359,7 @@ header {
   padding-left: 25px;
   padding-top: 3px;
   color: #ffffff;
-  font-family: Pt Sans;
+  font-family: ptsans;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -1368,7 +1370,7 @@ header {
   height: 38px;
   background-color: #ee3643;
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1474,7 +1476,7 @@ header {
   margin-left: 30px;
   margin-right: 370px;
   color: #32425c;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1487,7 +1489,7 @@ header {
   height: 38px;
   background-color: #ee3643;
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1523,7 +1525,7 @@ header {
   display: none;
   width: 135px;
   text-decoration: none;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1566,8 +1568,7 @@ header {
 
 /*drill-actions__hover ends*/
 
-.drill-item:hover,
-.drill-bfg__6000:hover {
+.drill-item:hover {
   border-color: #ffffff;
   box-shadow: 4px 5px 33px -5px #000000;
 }
@@ -1577,13 +1578,7 @@ header {
   display: block;
 }
 
-.drill-bfg__6000:hover .actions-buy,
-.drill-bfg__6000:hover .actions-bookmarks {
-  display: block;
-}
-
-.drill-item:hover .drill-img,
-.drill-bfg__6000:hover .drill-img {
+.drill-item:hover .drill-img {
   display: none;
 }
 
@@ -1656,7 +1651,7 @@ header {
 .drill-title {
   width: 158px;
   color: #000000;
-  font-family: Pt Sans;
+  font-family: ptsans;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -1677,7 +1672,7 @@ header {
 .drill-price__old {
   width: 67px;
   color: #999999;
-  font-family: Pt Sans;
+  font-family: ptsans;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -1697,7 +1692,7 @@ header {
   height: 38px;
   background-color: #ee3643;
   color: #ffffff;
-  font-family: Pt Sans;
+  font-family: ptsans;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -1760,7 +1755,7 @@ header {
   margin-left: 24px;
   margin-right: 273px;
   color: #32425c;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1773,7 +1768,7 @@ header {
   height: 38px;
   background-color: #ee3643;
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1876,14 +1871,14 @@ header {
 
 .services-about__title {
   width: 130px;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 30px;
   text-transform: uppercase;
   padding-bottom: 30px;
 }
 
 .services-about__text {
-  font-family: Pt Sans, sans-serif;
+  font-family: ptsans, sans-serif;
   font-size: 13px;
 }
 
@@ -1895,7 +1890,7 @@ header {
   flex-wrap: wrap;
   height: 283px;
   width: 240px;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
@@ -1989,7 +1984,7 @@ header {
   display: block;
   margin-bottom: 26px;
   color: #32425c;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 36px;
   text-transform: uppercase;
   padding-top: 10px;
@@ -1997,7 +1992,7 @@ header {
 
 .slider-text {
   color: #000000;
-  font-family: Pt Sans;
+  font-family: ptsans;
   font-size: 13px;
 }
 
@@ -2012,7 +2007,7 @@ header {
   height: 38px;
   background-color: #ee3643;
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -2051,7 +2046,7 @@ header {
 }
 
 .about-title {
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 30px;
   line-height: 24px;
   text-transform: uppercase;
@@ -2059,7 +2054,7 @@ header {
 }
 
 .about-text {
-  font-family: Pt Sans;
+  font-family: ptsans;
   font-size: 13px;
   line-height: 24px;
 }
@@ -2082,7 +2077,7 @@ header {
 .companies-list__item {
   position: relative;
   padding-left: 38px;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 18px;
   line-height: 20px;
   list-style-type: none;
@@ -2106,7 +2101,7 @@ header {
   width: 220px;
   background-color: #ee3643;
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -2131,14 +2126,14 @@ header {
 }
 
 .companies-contacts__title {
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 30px;
   text-transform: uppercase;
   margin-bottom: 29px;
 }
 
 .companies-contacts__text {
-  font-family: Pt Sans;
+  font-family: ptsans;
   font-size: 13px;
   margin-bottom: 31px;
 }
@@ -2153,7 +2148,7 @@ header {
   background-color: #ee3643;
   text-decoration: none;
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -2295,7 +2290,7 @@ footer {
   padding-left: 41px;
   width: 138px;
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -2306,7 +2301,7 @@ footer {
 .footer-contacts {
   display: flex;
   color: #f1f5f7;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -2330,7 +2325,7 @@ footer {
   padding-left: 0;
   list-style-type: none;
   text-transform: capitalize;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -2418,9 +2413,9 @@ footer {
 }
 
 .footer-copyright {
-  width: 227px;
+  width: 228px;
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -2495,7 +2490,7 @@ footer {
 
 .footer-communication {
   width: 135px;
-  font-family: Cuprum;
+  font-family: cuprum;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -2522,8 +2517,8 @@ footer {
 }
 
 .footer-developed {
-  width: 96px;
-  font-family: Cuprum;
+  width: 100px;
+  font-family: cuprum;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
