@@ -165,8 +165,6 @@ header {
   width: 21px;
   background: url(../img/search-icon__active.png);
   background-repeat: no-repeat;
-  height: 27px;
-  width: 21px;
 }
 
 
@@ -244,6 +242,15 @@ header {
   background-repeat: no-repeat;
 }
 
+.bookmark-icon:hover:before {
+  top: 11px;
+  left: 1px;
+  width: 19px;
+  height: 39px;
+  background: url(../img/bookmark-active.png);
+  background-repeat: no-repeat;
+}
+
 .basket-icon::before {
   position: absolute;
   content: "";
@@ -254,7 +261,14 @@ header {
   background: url(../img/basket-icon.png);
   background-repeat: no-repeat;
 }
-
+.basket-icon:hover:before {
+  top: 11px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  background: url(../img/basket-active.png);
+  background-repeat: no-repeat;
+}
 .menu-link__text {
   padding-left: 25px;
   font-family: 'Cuprum', 'Arial', sans-serif;
@@ -430,7 +444,14 @@ header {
   background: url('../img/enter-icon.png');
   background-repeat: no-repeat;
 }
-
+.enter:hover:before {
+  top: 12px;
+  left: 12px;
+  width: 28px;
+  height: 24px;
+  background: url(../img/enter-icon__active.png);
+  background-repeat: no-repeat;
+}
 .enter {
   position: relative;
   width: 121px;
@@ -488,7 +509,15 @@ header {
   background-repeat: no-repeat;
   left: 13px;
 }
-
+.auth-log__in:hover:before {
+  position: absolute;
+  content: "";
+  width: 21px;
+  top: 13px;
+  height: 23px;
+  background: url(../img/log-in__active.png);
+  background-repeat: no-repeat;
+}
 .auth-log__in::after {
   position: absolute;
   content: "";
@@ -499,7 +528,15 @@ header {
   right: 10px;
   top: 16px;
 }
-
+.auth-log__in:hover:after {
+  position: absolute;
+  content: "";
+  width: 21px;
+  top: 13px;
+  height: 23px;
+  background: url(../img/log-out__active.png);
+  background-repeat: no-repeat;
+}
 .log-in__functions {
   margin-top: 10px;
   display: -webkit-box;
@@ -1521,14 +1558,15 @@ header {
   margin-left: 25px;
   padding-top: 11px;
   padding-left: 49px;
-  padding-bottom: 14px;
 }
 
-.gallery-btn:hover {
+.gallery-btn:hover,
+.index-btn:hover {
   background: #eb2934;
 }
 
-.gallery-btn:active {
+.gallery-btn:active,
+.index-btn:active {
   background: #d8222f;
 }
 
