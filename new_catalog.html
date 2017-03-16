@@ -53,10 +53,10 @@
         <div class="auth__catalog">
           <!--<a class="enter" href="#">Войти</a>
           <a class="log-in" href="#">Регистрация</a>-->
-          <a class="auth-log__in">равшан джамшутович</a>
+          <a class="auth-log__in" href="#">равшан джамшутович</a>
           <div class="log-in__functions">
-            <a class="auth-order">Мои заказы</a>
-            <a class="auth-personal__account">Личный кабинет</a>
+            <a class="auth-order" href="#">Мои заказы</a>
+            <a class="auth-personal__account" href="#">Личный кабинет</a>
           </div>
         </div>
       </div>
@@ -114,16 +114,19 @@
         </div>
         <div class="filter-price-toggle">
           <span class="filter-title__price">цена:</span>
-          <div class="range__controls">
-            <!--<div class="price-bar"></div>-->
-            <input class="range__toggle" output="min.value=(ran.value); max.value=(ran.value)" id="ran" type="range" min="0" max="30 000"
-              multiple>
-            <label for="ran"></label>
+          <div class="range-filter">
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
           </div>
-          <div class="price-controls">
-            <label class="min-price" for="min-price"></label>
-            <label class="max-price" for="max-price"></label>
-          </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>
+        </div>
+        <div class="price-controls">
+         <label class="min-price"><input name="min-price__input" type="text" value="0"></label>
+          <label class="max-price"><input name="max-price" type="text" value="30000"></label>
+        </div>
+      </div>
         </div>
         <div class="filter-developers">
           <span class="filter-developers__title">производители:</span>
@@ -188,7 +191,7 @@
           <a href="#" class="actions-buy">купить</a>
           <a href="#" class="actions-bookmarks">в закладки</a>
           <img class="drill-img img__bfg-3000" src="img/drill-type2.jpg" width="127" height="112" alt="drill">
-          <span class="drill-title">Перфоратор BOSCH bfg 3000</span>
+          <span class="drill-title">Перфоратор BOSCH BFG 3000</span>
           <span class="drill-price__old">22500 Р.</span>
           <a class="drill-btn" href="#">15500 Р.</a>
         </div>
