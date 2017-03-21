@@ -269,19 +269,33 @@
           <img src="img/index-map.jpg" width="300" height="158" alt="mini-map">
         </a>
         <a href="#" class="index-btn companies-contacts__btn">заблудились? напишите нам</a>
+        <div id="form" class="companies-contacts__form">
          <form class="contacts-if__loose">
+           <div class="if-loose__container">
         <button class="if-loose__close"></button>
-        <span class="client-name">ваше имя:</span>
-        <label class="if-loose__label" for="your-name">представтесь, пожалуйста</label>
-        <input class="if-loose__input" id="your-name" name="clients-name">
-        <span class="client-email">ваш e-mail:</span>
-        <label class="if-loose__label" for="your-email">для отправки ответа</label>
-        <input class="if-loose__input" id="your-email" name="clients-email">
-        <span class="client-letter">текст письма:</span>
-        <label class="if-loose__label" for="your-letter">в свободной форме</label>
-        <input class="if-loose__input" id="your-letter" name="clients-letter">
+        <div class="client-info__block">
+          <div class="your-name">
+        <span class="client-name">Ваше имя:</span>
+        <!--<label class="if-loose__label" for="your-name"></label>-->
+        <input class="if-loose__input" id="your-name" name="clients-name" placeholder="Представтесь, пожалуйста">
+          </div>
+          <div class="your-email">
+        <span class="client-email">Ваш e-mail:</span>
+        <!--<label class="if-loose__label" for="your-email"></label>-->
+        <input class="if-loose__input" id="your-email" name="clients-email" placeholder="Для отправки ответа">
+        </div>
+        </div>
+        <div class="your-letter">
+        <span class="client-letter">Текст письма:</span>
+        <!--<label class="if-loose__label" for="your-letter"></label>-->
+        <input class="letter__input" id="your-letter" name="clients-letter" placeholder="В свободной форме">
+        </div>
+           </div>
+           <div class="btn-container">
         <a href="#" class="if-loose__btn">отправить</a>
+        </div>
       </form>
+      </div>
       </div>
     </section>
     <footer>
