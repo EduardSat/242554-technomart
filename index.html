@@ -18,7 +18,7 @@
         </div>
         <form action="" method="get" class="search">
           <input class="search__input" id="search-field" placeholder="Поиск:" type="text" required>
-           <label class="search__label" for="search-field" type="search"></label>
+          <label class="search__label" for="search-field" type="search"></label>
         </form>
         <ul class="top-header__menu">
           <li class="menu-item bookmark__btn">
@@ -94,21 +94,29 @@
         <span class="category-text">Техника</span>
         <a class="category-btn equipment-btn" href="#">для стройки</a>
       </div>
-      <div class="category-gallery" active>
-        <div class="category-gallery-title">
-          <span class="gallery-title">перфораторы</span>
-          <span class="gallery-text">Настроящие мужские игрушки</span>
+      <div class="category-gallery">
+        <div class="gallery-slide category-gallery__active" id="slide-1">
+          <div class="category-gallery-title">
+            <span class="gallery-title">перфораторы</span>
+            <span class="gallery-text">Настроящие мужские игрушки</span>
+            <a class="gallery-btn" href="#">открыть каталог</a>
+          </div>
         </div>
         <a class="gallery-button gallery-btn__prev"></a>
         <a class="gallery-button gallery-btn__next"></a>
-        <a class="gallery-btn" href="#">открыть каталог</a>
-        <div class="category-gallery__hiden">
-      <div class="category-gallery-title">
-          <span class="gallery-title">дрели</span>
-          <span class="gallery-text">соседям на радость</span>
+        <div class="gallery-slide category-gallery__hiden" id="slide-2">
+          <div class="category-gallery-title">
+            <span class="gallery-title">дрели</span>
+            <span class="gallery-text">соседям на радость</span>
+              <a class="gallery-btn" href="#">открыть каталог</a>
+          </div>
         </div>
-        <a class="gallery-btn" href="#">открыть каталог</a>
-      </div>
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <div class="toggle-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+        </div>
       </div>
       <div class="category-right__column">
         <div class="category-item category-sales">
@@ -167,7 +175,7 @@
       </div>
       <div class="popular-manuf__bottom">
         <a class="manuf__item item__bosh">
-          <img class="manuf-img" src="img/bosch.jpg" width="126" height="37" alt="bosh">
+          <img class="manuf-img img__bosch" src="img/bosch.jpg" width="126" height="37" alt="bosh">
         </a>
         <a class="manuf__item item__makita">
           <img class="manuf-img img__makita" src="img/makita.jpg" width="123" height="40" alt="">
@@ -270,36 +278,34 @@
         </a>
         <a href="#" class="index-btn companies-contacts__btn">заблудились? напишите нам</a>
         <div id="form" class="companies-contacts__form">
-         <form class="contacts-if__loose">
-           <div class="if-loose__container">
-        <button class="if-loose__close"></button>
-        <div class="client-info__block">
-          <div class="your-name">
-        <span class="client-name">Ваше имя:</span>
-        <!--<label class="if-loose__label" for="your-name"></label>-->
-        <input class="if-loose__input" id="your-name" name="clients-name" placeholder="Представтесь, пожалуйста">
+          <form class="contacts-if__loose ">
+            <div class="if-loose__container">
+              <button class="if-loose__close" type="button"></button>
+              <div class="client-info__block">
+                <div class="your-name">
+                  <span class="client-name">Ваше имя:</span>
+                  <input class="if-loose__input" id="your-name" name="clients-name" placeholder="Представтесь, пожалуйста">
+                </div>
+                <div class="your-email">
+                  <span class="client-email">Ваш e-mail:</span>
+                  <input class="if-loose__input" id="your-email" name="clients-email" placeholder="Для отправки ответа">
+                </div>
+              </div>
+              <div class="your-letter">
+                <span class="client-letter">Текст письма:</span>
+                <textarea name="comment" class="letter__input" id="comment-field" rows="15">В свободной форме</textarea>
+              </div>
+            </div>
+            <div class="btn-container">
+              <a href="#" class="if-loose__btn">отправить</a>
+            </div>
+          </form>
+        </div>
+        <div class="about-contacts__map">
+          <div class="contacts-map__container">
+            <button class="about-map__close"></button>
           </div>
-          <div class="your-email">
-        <span class="client-email">Ваш e-mail:</span>
-        <!--<label class="if-loose__label" for="your-email"></label>-->
-        <input class="if-loose__input" id="your-email" name="clients-email" placeholder="Для отправки ответа">
         </div>
-        </div>
-        <div class="your-letter">
-        <span class="client-letter">Текст письма:</span>
-         <textarea name="comment" class="letter__input" id="comment-field" rows="15">В свободной форме</textarea>
-        </div>
-           </div>
-           <div class="btn-container">
-        <a href="#" class="if-loose__btn">отправить</a>
-        </div>
-      </form>
-      </div>
-      <div class="about-contacts__map">
-        <div class="contacts-map__container">
-        <button class="about-map__close"></button>
-        </div>
-      </div>
       </div>
     </section>
     <footer>
@@ -404,7 +410,7 @@
     </script>-->
   </div>
   <script src="jquery-3.1.1.min"></script>
-   <script type="text/javascript" src="technomart.js"></script>
+  <script type="text/javascript" src="js/technomart.js"></script>
 </body>
 
 </html>

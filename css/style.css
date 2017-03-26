@@ -898,7 +898,7 @@ header {
 }
 
 .range-controls .bar {
-  width: 70%;
+  width: 82%;
   height: 2px;
   background: #00ca74;
 }
@@ -940,8 +940,9 @@ header {
   background: #f1f1f1;
 }
 
-.max-price {
-  text-align: right;
+.max-price,
+.min-price {
+  text-align: center;
 }
 
 .min-price {
@@ -1194,22 +1195,27 @@ header {
   right: 13px;
   top: 14px;
 }
+
 .sorting-controls__up:hover {
-    border: 5px solid transparent;
+  border: 5px solid transparent;
   border-bottom: 11px solid #000000;
 }
+
 .sorting-controls__down:hover {
-   border: 5px solid transparent;
+  border: 5px solid transparent;
   border-top: 10px solid #000000;
-} 
+}
+
 .sorting-controls__up:active {
-    border: 5px solid transparent;
+  border: 5px solid transparent;
   border-bottom: 11px solid #ef3341;
 }
+
 .sorting-controls__down:active {
-   border: 5px solid transparent;
+  border: 5px solid transparent;
   border-top: 10px solid #ef3341;
-} 
+}
+
 .drill-sorting__link {
   text-decoration: none;
   font-size: 13px;
@@ -1221,12 +1227,15 @@ header {
 .drill-sorting__link {
   border-bottom: 1px dotted #ee3643;
 }
+
 .drill-sorting__link:hover {
-   border-bottom: 1px solid #ee3643;
+  border-bottom: 1px solid #ee3643;
 }
+
 .drill-sorting__link:active {
   border: none;
 }
+
 .drill-sorting__item {
   padding-top: 9px;
   text-align: center;
@@ -1309,6 +1318,11 @@ header {
 
 .paginator__button:hover,
 .next-button:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.paginator__button:active,
+.next-button:active {
   border: 1px solid #fc3240;
 }
 
@@ -1475,7 +1489,7 @@ header {
 
 .category-btn {
   display: block;
-  background-color: rgba(0, 0, 0, 0.17);
+  background-color: rgba(229, 229, 229, 0.37);
   -ms-flex-item-align: start;
   align-self: flex-start;
   width: 135px;
@@ -1516,7 +1530,7 @@ header {
 }
 
 .category-btn:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(204, 204, 204, 0.9);
 }
 
 .category-btn:active {
@@ -1541,6 +1555,36 @@ header {
   background-repeat: no-repeat;
 }
 
+.category-gallery input {
+  display: none;
+}
+
+.toggle-controls {
+  display: flex;
+  width: 28px;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 25px;
+  left: 293px;
+  z-index: 20;
+}
+.toggle-controls label {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#btn-1:checked ~ .category-gallery #slide-1,
+#btn-2:checked ~ .category-gallery #slide-2 {
+  display: block;
+}
+.gallery-label:first-child {
+  margin-left: 10px;
+}
+.category-gallery__active,
 .category-gallery__hiden {
   display: none;
 }
@@ -1555,7 +1599,7 @@ header {
   flex-direction: column;
   width: 620px;
   height: 105px;
-  background-color: rgba(0, 0, 0, 0.17);
+  background-color: rgba(0, 0, 0, 0.26);
 }
 
 .gallery-title {
@@ -1565,9 +1609,10 @@ header {
   color: #ffffff;
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .gallery-text {
@@ -1810,6 +1855,8 @@ header {
 }
 
 .cart-form__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 620px;
   height: 112px;
@@ -1910,9 +1957,11 @@ header {
   background-repeat: no-repeat;
   left: 10px;
 }
+
 .actions-buy:hover:after {
   opacity: 1;
 }
+
 .actions-bookmarks {
   width: 135px;
   height: 38px;
@@ -2055,6 +2104,7 @@ header {
 }
 
 .drill-price__old {
+  display: block;
   width: 67px;
   color: #999999;
   font-size: 17px;
@@ -2103,6 +2153,7 @@ header {
   border: 19px solid #ffffff;
   border-left-color: #ee3643;
 }
+
 
 /*popular items section ends*/
 
@@ -2186,34 +2237,39 @@ header {
 
 .img__metabo {
   margin-left: 5px;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .img__interscol {
-  margin-bottom: 13px;
+  margin-bottom: 15px;
   margin-right: 2px;
 }
 
 .img__makita {
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .img__dewalt {
+  margin-bottom: 5px;
+}
+
+.img__bosch {
   margin-bottom: 3px;
 }
 
 .img__lg {
-  margin-right: 2px;
+  margin-right: 3px;
+  margin-bottom: 2px;
 }
 
 .img__hitachi {
-  margin-top: 3px;
+  margin-top: 2px;
   margin-left: 5px;
 }
 
 .img__aeg {
   margin-left: 2px;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 .manuf__item:hover {
@@ -2510,8 +2566,12 @@ header {
   width: 25px;
   height: 2px;
   top: 9px;
-  left: 1px;
+  left: 0;
   background-color: #fb565a;
+}
+
+.companies-item__3::before {
+  top: 8px;
 }
 
 .about-btn {
@@ -2604,19 +2664,23 @@ header {
   flex-direction: column;
   position: absolute;
   min-width: 620px;
-  left: 160px;
+  left: -267px;
   top: 114px;
   min-height: 430px;
   border-top: 7px solid #ee3643;
-}
-
-.contacts-if__loose {
   background-color: #ffffff;
-  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+    box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+}
+.contacts-form-show {
+  display: block;
+}
+.contacts-if__loose {
   position: relative;
 }
 
 .client-info__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-wrap: nowrap;
   margin-top: 55px;
@@ -2709,12 +2773,13 @@ header {
   position: absolute;
   width: 23px;
   height: 23px;
-  top: 7px;
+  top: -45px;
   right: 13px;
   border: none;
   background: url(../img/cross-icon.png);
   background-repeat: no-repeat;
   outline: none;
+  cursor: pointer;
 }
 
 .about-contacts__map {
