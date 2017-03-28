@@ -284,11 +284,11 @@
               <div class="client-info__block">
                 <div class="your-name">
                   <span class="client-name">Ваше имя:</span>
-                  <input class="if-loose__input" id="your-name" name="clients-name" placeholder="Представтесь, пожалуйста">
+                  <input class="if-loose__input" id="your-name" name="login" placeholder="Представтесь, пожалуйста" required>
                 </div>
                 <div class="your-email">
                   <span class="client-email">Ваш e-mail:</span>
-                  <input class="if-loose__input" id="your-email" name="clients-email" placeholder="Для отправки ответа">
+                  <input class="if-loose__input" id="your-email" name="clients-email" placeholder="Для отправки ответа" required>
                 </div>
               </div>
               <div class="your-letter">
@@ -301,11 +301,10 @@
             </div>
           </form>
         </div>
-        <div class="about-contacts__map">
-          <div class="contacts-map__container">
-            <button class="about-map__close"></button>
-          </div>
-        </div>
+      </div>
+       <div class="companies-map-window">
+      <button class="about-map__close" type="button" title="Закрыть"></button>
+      <iframe class="modal-content" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="766" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </section>
     <footer>
@@ -379,35 +378,6 @@
         </div>
       </div>
     </footer>
-    <!--<div class="modal-content">
-  <div class="modal-content-map">
-      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="766" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-  </div>
-</body>
-<script>
-  var mapOpen= document.querySelector(".companies-contacts__map");
-  var mapPopup= document.quertySelector(".modal-content-map");
-  var mapClose= document.querySelector(".modal-content-close");
- mapOpen.addEventListener("click", function(event) {
-        event.preventDefault();
-        mapPopup.classList.add("modal-content-show");
-      });
-
-      mapClose.addEventListener("click", function(event) {
-        event.preventDefault();
-        mapPopup.classList.remove("modal-content-show");
-      });
-
-      window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (mapPopup.classList.contains("modal-content-show")) {
-            mapPopup.classList.remove("modal-content-show");
-          }
-        }
-      });
-    </script>-->
   </div>
   <script src="jquery-3.1.1.min"></script>
   <script type="text/javascript" src="js/technomart.js"></script>

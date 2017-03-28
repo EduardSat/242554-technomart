@@ -1056,7 +1056,7 @@ header {
   height: 23px;
   background: url(../img/check-off_icon.png);
   background-repeat: no-repeat;
-  left: 2px;
+  left: 0;
   top: -1px;
 }
 
@@ -1813,7 +1813,7 @@ header {
 /*modal-cart-form*/
 
 .cart-form {
-  display: none;
+  display: block;
   flex-direction: column;
   position: absolute;
   width: 620px;
@@ -1825,9 +1825,8 @@ header {
   left: -83px;
   border-top: 7px solid #ee3643;
 }
-
-.cart-form__container {
-  position: relative;
+.cart-form-show {
+  display: block;
 }
 
 .cart-info {
@@ -2381,6 +2380,7 @@ header {
   padding-left: 23px;
   padding-top: 12px;
   width: 240px;
+  cursor: pointer;
 }
 
 .options-select__label:hover {
@@ -2625,9 +2625,16 @@ header {
   min-width: 220px;
 }
 
-.companies-contacts__map {
+.companies-map-window {
+  display: none;
+  position: relative;
+  height: 446px;
+  box-shadow: 0 0 15px 1px rgba(35, 31, 32, 0.5);
+  right: 0;
+  z-index: 1;
+}
+.modal-content-map {
   display: block;
-  margin-bottom: 38px;
 }
 
 .companies-contacts__btn {
@@ -2782,17 +2789,16 @@ header {
   cursor: pointer;
 }
 
-.about-contacts__map {
-  display: none;
+.modal-content {
+  display: block;
   position: absolute;
-  width: 940px;
+  width: 766px;
   height: 446px;
   box-shadow: 0 0 15px 1px rgba(35, 31, 32, 0.5);
-  background-color: #444444;
   right: 0;
+  z-index: 1;
 }
-
-.about-map__container {
+.modal-map {
   position: relative;
 }
 
@@ -2806,6 +2812,8 @@ header {
   outline: none;
   right: 7px;
   top: 8px;
+  z-index: 2;
+  cursor: pointer;
 }
 
 
